@@ -5,3 +5,10 @@ $( document ).ready(function() {
 $(window).resize(function(){
   reescalaVentana();
 })
+
+$(document).click(function(e){
+  console.log("click");
+})
+$("#contenedorJuego").click(function(e) {
+    console.log("click");
+});

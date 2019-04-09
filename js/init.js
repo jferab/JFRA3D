@@ -15,17 +15,63 @@ function init() {
 
 
   scene = new THREE.Scene();
-  scene.add( new THREE.GridHelper( 1000, 10 ) );
-  var light = new THREE.DirectionalLight( 0xffffff, 2 );
-  light.position.set( 1, 1, 1 );
-  scene.add( light );
+  //scene.add( new THREE.GridHelper( 1000, 10 ) );
+  //var light = new THREE.DirectionalLight( 0xffffff, 1000 );
+  //var light = new THREE.PointLight( 0xff0000, 1, 1000 );
+
+  //light.position.set( 1, 0, 0 );
+  //scene.add( light );
 
 
-  var geometry = new THREE.CubeGeometry( 200, 200, 200 );
-  var material = new THREE.MeshNormalMaterial();
+  //var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 
-  var mesh = new THREE.Mesh( geometry, material );
+  for(var i = 0; i<5; i++){
+    var img;
+    switch (i) {
+      case 0: img = 'AJ';break;
+      case 1: img = 'IJ';break;
+      case 2: img = 'UJ';break;
+      case 3: img = 'EJ';break;
+      case 4: img = 'OJ';break;
+      default:
 
-  mesh.name = "malla"
-  scene.add( mesh );
+    }
+    var material =  new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture('imagenes/'+img+'.png')})
+    //var geometry = new THREE.CubeGeometry( 100, 100, 100 );
+    var geometry = new THREE.SphereGeometry( 50, 32, 32 );
+    //var material = new THREE.MeshNormalMaterial();
+   arrMesh[i] = new THREE.Mesh( geometry, material );
+   arrMesh[i].name = img
+   arrMesh[i].position.z = i * 200-100;
+   //arrMesh[i].rotation.y = Math.PI;
+   scene.add( arrMesh[i] );
+
+   var img;
+   switch (i) {
+     case 0: img = 'A';break;
+     case 1: img = 'I';break;
+     case 2: img = 'U';break;
+     case 3: img = 'E';break;
+     case 4: img = 'O';break;
+     default:
+
+   }
+   var material =  new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture('imagenes/'+img+'.png')})
+   //var geometry = new THREE.CubeGeometry( 100, 100, 100 );
+   var geometry = new THREE.SphereGeometry( 50, 32, 32 );
+   //var material = new THREE.MeshNormalMaterial();
+   arrMesh2[i] = new THREE.Mesh( geometry, material );
+   arrMesh2[i].name = img
+   arrMesh2[i].position.y = 500;
+   arrMesh2[i].position.z = i * 200-200;
+   //arrMesh[i].rotation.y = Math.PI;
+   scene.add( arrMesh2[i] );
+
+
+  }
+
+
+
+
+
 }
