@@ -23,10 +23,13 @@ function Camara(ancho,alto)
       this.posX = pz;
       this.obj.position.set(this.posX,this.posY,this.posZ);
 
-      this.obj.lookAt( 0, 200, 0 );
+      this.obj.lookAt( 0, 000, 0 );
   }
 
+  // Y vertical
+  //Z horizontal
 
-  this.setPosition(1000, 500, 1000 );
+
+  this.setPosition(1050,0,1050);
 
 }

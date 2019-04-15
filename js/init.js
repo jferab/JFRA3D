@@ -15,7 +15,8 @@ function init() {
 
 
   scene = new THREE.Scene();
-  //scene.add( new THREE.GridHelper( 1000, 10 ) );
+  scene.add( new THREE.GridHelper( 1000, 10 ) );
+  scene.add( new THREE.AxesHelper( 100 ) );
   //var light = new THREE.DirectionalLight( 0xffffff, 1000 );
   //var light = new THREE.PointLight( 0xff0000, 1, 1000 );
 
@@ -42,9 +43,7 @@ function init() {
     //var material = new THREE.MeshNormalMaterial();
    arrMesh[i] = new THREE.Mesh( geometry, material );
    arrMesh[i].name = img
-   arrMesh[i].position.z = i * 200-100;
-   //arrMesh[i].rotation.y = Math.PI;
-   scene.add( arrMesh[i] );
+
 
    var img;
    switch (i) {
@@ -62,16 +61,89 @@ function init() {
    //var material = new THREE.MeshNormalMaterial();
    arrMesh2[i] = new THREE.Mesh( geometry, material );
    arrMesh2[i].name = img
-   arrMesh2[i].position.y = 500;
-   arrMesh2[i].position.z = i * 200-200;
+
+   arrMesh2[i].position.y = Math.random()*1000-500;;
+   arrMesh2[i].position.z = Math.random()*1000-500;
+   arrMesh2[i].position.x = Math.random()*1000-500;
+   arrMesh[i].position.y = Math.random()*1000-500;;
+   arrMesh[i].position.z = Math.random()*1000-500;
+   arrMesh[i].position.x = Math.random()*1000-500;
+   //console.log(arrMesh[i].position);
    //arrMesh[i].rotation.y = Math.PI;
-   scene.add( arrMesh2[i] );
+   //scene.add( arrMesh[i] );
+   //scene.add( arrMesh2[i] );
 
 
   }
 
+     var largo = 500
+     var geometry = new THREE.CubeGeometry( 10, largo, 10 );
+     var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+     var mesh = new THREE.Mesh( geometry, material );
+     mesh.position.set(-largo,0,largo)
+     scene.add( mesh );
+
+     var mesh = new THREE.Mesh( geometry, material );
+     mesh.position.set(-largo,0,-largo)
+     scene.add( mesh );
+
+     var mesh = new THREE.Mesh( geometry, material );
+     mesh.position.set(largo,0,largo)
+     scene.add( mesh );
+     var mesh = new THREE.Mesh( geometry, material );
+     mesh.position.set(largo,0,-largo)
+     scene.add( mesh );
 
 
+     var cargarFuente = new THREE.FontLoader();
+
+     cargarFuente.load( 'lib/threejs/fonts/helvetiker_regular.typeface.json', function ( font ) {
+       console.log("cargado");
+
+      var materials = [
+					//new THREE.MeshPhongMaterial( { color: 0x00ffff, flatShading: true } ), // front
+					//new THREE.MeshPhongMaterial( { color: 0x00ffff } ) // side
+          new THREE.MeshBasicMaterial( {color: 0xff0000, flatShading: true} ),
+          new THREE.MeshBasicMaterial( {color: 0xff0000} )
+				];
+
+				//group = new THREE.Group();
+				//group.position.y = 100;
+         arrMesh[0] = new THREE.Mesh( geometry, materials );
+        scene.add( arrMesh[0] );
+
+        var i =0;
+        for(var x in lista){
+          var geometry = new THREE.TextGeometry( lista[x].a, {
+         		font: font,
+         		size: 80,
+         		height: 5,
+         		curveSegments: 12,
+         		bevelEnabled: true,
+         		bevelThickness: 10,
+         		bevelSize: 8,
+         		bevelSegments: 5
+         	} );
+          arrMesh[i] = new THREE.Mesh( geometry, materials );
+         scene.add( arrMesh[i] );
 
 
+           var geometry = new THREE.TextGeometry( lista[x].b, {
+             font: font,
+             size: 80,
+             height: 5,
+             curveSegments: 12,
+             bevelEnabled: true,
+             bevelThickness: 10,
+             bevelSize: 8,
+             bevelSegments: 5
+           } );
+           arrMesh2[i] = new THREE.Mesh( geometry, materials );
+          scene.add( arrMesh2[i] );
+          i++;
+        }
+        var light = new THREE.PointLight( 0xff0000, 100, 1000 );
+        light.position.set( 50, 50, 50 );
+        scene.add( light );
+     } );
 }
