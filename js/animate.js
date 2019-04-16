@@ -5,27 +5,6 @@ function animate() {
 
     var left, bottom, width, height;
 
-    left = 1;
-    bottom = 1;
-    width = 0.5 * SCREEN_W - 2;
-    height = SCREEN_H - 2;
-    renderer.setViewport(left, bottom, width, height);
-    renderer.setScissor(left, bottom, width, height);
-    renderer.enableScissorTest(true);
-    topCamera.aspect = width / height;
-    topCamera.updateProjectionMatrix();
-    renderer.render(scene, topCamera);
-
-    left = 0.5 * SCREEN_W + 1;
-    bottom = 1;
-    width = 0.5 * SCREEN_W - 2;
-    height = SCREEN_H - 2;
-    renderer.setViewport(left, bottom, width, height);
-    renderer.setScissor(left, bottom, width, height);
-    renderer.enableScissorTest(true); // clip out "viewport"
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-    renderer.render(scene, camera);
 
 
     //camara.obj.updateMatrixWorld();
@@ -33,9 +12,13 @@ function animate() {
     var intersects = raycaster.intersectObjects(scene.children);
     if (intersects.length > 0) {
         ratonArriba = intersects[0].object.name;
+
     } else {
         ratonArriba = "nada"
     }
+
+      console.log( ratonArriba);
+
 
 
     renderer.render(scene, camera);
@@ -65,31 +48,50 @@ function animate() {
         arrMesh2[i].position.z += Math.random() * velpos - velposdesf;
 
         arrMesh2[i].position.x = validarPosicion(arrMesh2[i].position.x);
-        arrMesh2[i].position.y = validarPosicion(arrMesh2[i].position.y);
-        arrMesh2[i].position.z = validarPosicion(arrMesh2[i].position.z);
+        arrMesh2[i].position.y = validarPosicionY(arrMesh2[i].position.y);
         arrMesh[i].position.x = validarPosicion(arrMesh[i].position.x);
-        arrMesh[i].position.y = validarPosicion(arrMesh[i].position.y);
+        arrMesh2[i].position.z = validarPosicion(arrMesh2[i].position.z);
+        arrMesh[i].position.y = validarPosicionY(arrMesh[i].position.y);
         arrMesh[i].position.z = validarPosicion(arrMesh[i].position.z);
     }
-	
+
 	//RAUL
 	Jugador1.movimiento();
 	//RAUL FIN
 
-	
 
     requestAnimationFrame(animate);
     var delta = clock.getDelta();
     if (mixer) {
         mixer.update(delta);
     }
-	
+
 	if(avance2 == 1||avance2 == -1){
 		var delta2 = clock.getDelta();
 
 		if ( mixer2 ) mixer2.update( delta2 );
 	}
-	
+  left = 1;
+  bottom = 1;
+  width = 0.5 * SCREEN_W - 2;
+  height = SCREEN_H - 2;
+  renderer.setViewport(left, bottom, width, height);
+  renderer.setScissor(left, bottom, width, height);
+  renderer.setScissorTest(true);
+  topCamera.aspect = width / height;
+  topCamera.updateProjectionMatrix();
+  renderer.render(scene, topCamera);
+
+  left = 0.5 * SCREEN_W + 1;
+  bottom = 1;
+  width = 0.5 * SCREEN_W - 2;
+  height = SCREEN_H - 2;
+  renderer.setViewport(left, bottom, width, height);
+  renderer.setScissor(left, bottom, width, height);
+  renderer.setScissorTest(true); // clip out "viewport"
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+  renderer.render(scene, camera);
     renderer.render(scene, camera);
-	
+
 }
