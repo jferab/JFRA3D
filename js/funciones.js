@@ -5,7 +5,7 @@ function reescalaVentana() {
 }
 
 function validarPosicion(pos) {
-    var cant = 400
+    var cant = 300
     if (pos < -cant) {
         pos = -cant
     } else if (pos > cant) {
@@ -16,7 +16,7 @@ function validarPosicion(pos) {
 }
 
 function validarPosicionY(pos) {
-    var cant = 200
+    var cant = 150
     if (pos < 100) {
         pos = 100
     } else if (pos > cant*2) {
