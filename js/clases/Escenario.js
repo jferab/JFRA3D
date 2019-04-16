@@ -1,5 +1,4 @@
-function Escenario(ancho,alto)
-{
-  this.ancho = ancho;
-  this.alto = alto;
+function Escenario(ancho, alto) {
+    this.ancho = ancho;
+    this.alto = alto;
 }

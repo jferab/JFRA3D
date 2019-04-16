@@ -1,14 +1,14 @@
-$( document ).ready(function() {
-  reescalaVentana();
+$(document).ready(function () {
+    reescalaVentana();
 });
 
-$(window).resize(function(){
-  reescalaVentana();
+$(window).resize(function () {
+    reescalaVentana();
 })
 
-$(document).click(function(e){
-  console.log("click");
+$(document).click(function (e) {
+    console.log("click");
 })
-$("#contenedorJuego").click(function(e) {
+$("#contenedorJuego").click(function (e) {
     console.log("click");
 });
