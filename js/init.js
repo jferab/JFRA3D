@@ -26,6 +26,7 @@ function init() {
 
     //var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 
+    /* Crear de crear esferas
     for (var i = 0; i < 5; i++) {
         var img;
         switch (i) {
@@ -99,7 +100,7 @@ function init() {
 
 
     }
-
+    */ //Fin de crear esferas
     var largo = 500
     var geometry = new THREE.CubeGeometry(10, largo, 10);
     var material = new THREE.MeshBasicMaterial({
@@ -161,8 +162,8 @@ function init() {
 
             var geometry = new THREE.TextGeometry(lista[x].b, {
                 font: font,
-                size: 80,
-                height: 5,
+                size: 10,
+                height: 2,
                 curveSegments: 12,
                 bevelEnabled: true,
                 bevelThickness: 10,
@@ -173,8 +174,10 @@ function init() {
             scene.add(arrMesh2[i]);
             i++;
         }
-        var light = new THREE.PointLight(0xff0000, 100, 1000);
-        light.position.set(50, 50, 50);
+        var light = new THREE.PointLight(0xffffff, 100, 1000);
+        light.position.set(50, 500, 50);
         scene.add(light);
+
+        animate();
     });
 }

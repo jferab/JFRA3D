@@ -1,2 +1,2 @@
 init();
-animate();
+//animate();
