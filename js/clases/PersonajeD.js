@@ -9,7 +9,7 @@ function CargarModelo() {
     var loader = new THREE.FBXLoader();
     loader.load('fbx/Idle.fbx', function (object) {
 		
-		object.add(camera);
+		object.add(topCamera2);
         personaje = object;
         personaje.name = "Personaje";
         clips[0] = object.animations[0];

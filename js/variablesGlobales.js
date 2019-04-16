@@ -18,6 +18,12 @@ topCamera.position.set(0, 500, -1500);
 topCamera.up.set(0, 1500, 0);
 topCamera.lookAt(new THREE.Vector3(0, 0, 0));
 
+var topCamera2 = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
+topCamera2.position.set(0, 500, -1500);
+topCamera2.up.set(0, 1500, 0);
+topCamera2.lookAt(new THREE.Vector3(0, 0, 0));
+
+
 var
     scene, renderer, control, orbit;
 	
