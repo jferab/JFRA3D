@@ -25,11 +25,11 @@ function animate() {
     renderer.enableScissorTest(true); // clip out "viewport"
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
-    renderer.render(scene, topCamera2);
+    renderer.render(scene, camera);
 
 
     //camara.obj.updateMatrixWorld();
-    raycaster.setFromCamera(mouse, topCamera2);
+    raycaster.setFromCamera(mouse, camera);
     var intersects = raycaster.intersectObjects(scene.children);
     if (intersects.length > 0) {
         ratonArriba = intersects[0].object.name;
@@ -38,7 +38,7 @@ function animate() {
     }
 
 
-    renderer.render(scene, topCamera2);
+    renderer.render(scene, camera);
     for (var i = 0; i < 5; i++) {
         //console.log(arrMesh[i]);
         var velrot = .5
@@ -90,6 +90,6 @@ function animate() {
 		if ( mixer2 ) mixer2.update( delta2 );
 	}
 	
-    renderer.render(scene, topCamera2);
+    renderer.render(scene, camera);
 	
 }

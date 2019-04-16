@@ -1,6 +1,6 @@
 var escenario = new Escenario($("#contenedorJuego").width(), $("#contenedorJuego").height());
 console.log(escenario);
-var
+/*var
     //camara = new Camara(escenario.ancho,escenario.alto),
 
     //camera = new THREE.PerspectiveCamera (45, width/height, 1, 10000);
@@ -8,7 +8,7 @@ var
 camera.position.y = 200;
 camera.position.z = -500;
 camera.lookAt(new THREE.Vector3(0, 0, 0));
-
+*/
 //var topCamera = new THREE.OrthographicCamera(-110, 110, 110, -110, 10, 2000);
 //topCamera.position.set(0, 450, 0);
 //topCamera.up.set(0, 0, -1);
@@ -18,10 +18,10 @@ topCamera.position.set(0, 500, -1500);
 topCamera.up.set(0, 1500, 0);
 topCamera.lookAt(new THREE.Vector3(0, 0, 0));
 
-var topCamera2 = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-topCamera2.position.set(0, 500, -1500);
-topCamera2.up.set(0, 1500, 0);
-topCamera2.lookAt(new THREE.Vector3(0, 0, 0));
+var camera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
+camera.position.set(0, 500, -1500);
+camera.up.set(0, 1500, 0);
+camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 
 var
