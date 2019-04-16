@@ -124,19 +124,20 @@ function init() {
 
     var cargarFuente = new THREE.FontLoader();
 
-    cargarFuente.load('lib/threejs/fonts/helvetiker_regular.typeface.json', function (font) {
+    cargarFuente.load('lib/font3d/KaoriGelBold_Bold.json', function (font) {
+    //cargarFuente.load('lib/threejs/fonts/helvetiker_regular.typeface.json', function (font) {
         console.log("cargado");
 
         var materials = [
-					//new THREE.MeshPhongMaterial( { color: 0x00ffff, flatShading: true } ), // front
-					//new THREE.MeshPhongMaterial( { color: 0x00ffff } ) // side
-          new THREE.MeshBasicMaterial({
+					new THREE.MeshPhongMaterial( { color: 0xff0000, flatShading: true } ), // front
+					new THREE.MeshPhongMaterial( { color: 0xff0000 } ) // side
+          /*new THREE.MeshBasicMaterial({
                 color: 0xff0000,
                 flatShading: true
             }),
           new THREE.MeshBasicMaterial({
                 color: 0xff0000
-            })
+            })*/
 				];
 
         //group = new THREE.Group();
@@ -147,6 +148,7 @@ function init() {
         var i = 0;
         for (var x in lista) {
             var geometry = new THREE.TextGeometry(lista[x].a, {
+            //var geometry = new THREE.TextGeometry('あ', {
                 font: font,
                 size: 80,
                 height: 5,
@@ -157,13 +159,16 @@ function init() {
                 bevelSegments: 5
             });
             arrMesh[i] = new THREE.Mesh(geometry, materials);
+            arrMesh[i].position.y += Math.random() * 1000 - 500;
+            arrMesh[i].position.x += Math.random() * 1000 - 500;
+            arrMesh[i].position.z += Math.random() * 1000 - 500;
             scene.add(arrMesh[i]);
-
-
+            //break;
+            console.log(lista[x].b);
             var geometry = new THREE.TextGeometry(lista[x].b, {
                 font: font,
-                size: 10,
-                height: 2,
+                size: 80,
+                height: 5,
                 curveSegments: 12,
                 bevelEnabled: true,
                 bevelThickness: 10,
@@ -171,6 +176,9 @@ function init() {
                 bevelSegments: 5
             });
             arrMesh2[i] = new THREE.Mesh(geometry, materials);
+            arrMesh2[i].position.y += Math.random() * 1000 - 500;
+            arrMesh2[i].position.x += Math.random() * 1000 - 500;
+            arrMesh2[i].position.z += Math.random() * 1000 - 500;
             scene.add(arrMesh2[i]);
             i++;
         }

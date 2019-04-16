@@ -47,46 +47,23 @@ document.addEventListener('mousedown', onDocumentMouseDown, false);
 var lista = new Array();
 lista.push({
     a: "a",
-    b: "A"
-});
-lista.push({
-    a: "b",
-    b: "B"
-});
-lista.push({
-    a: "c",
-    b: "C"
-});
-lista.push({
-    a: "d",
-    b: "D"
-});
-lista.push({
-    a: "e",
-    b: "E"
-});
-lista.push({
-    a: "f",
-    b: "F"
-});
-lista.push({
-    a: "g",
-    b: "G"
-});
-lista.push({
-    a: "h",
-    b: "H"
+    b: "あ"
 });
 lista.push({
     a: "i",
-    b: "I"
+    b: "い"
 });
 lista.push({
-    a: "j",
-    b: "J"
+    a: "u",
+    b: "う"
 });
 lista.push({
-    a: "k",
-    b: "K"
+    a: "e",
+    b: "え"
 });
+lista.push({
+    a: "o",
+    b: "お"
+});
+
 console.log(lista);

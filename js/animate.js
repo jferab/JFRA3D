@@ -41,7 +41,7 @@ function animate() {
     renderer.render(scene, camera);
     for (var i = 0; i < 5; i++) {
         //console.log(arrMesh[i]);
-        var velrot = .05
+        var velrot = .5
         var velrotdesf = velrot * .5
 
         arrMesh[i].rotation.y += Math.random() * velrot - velrotdesf;
@@ -53,7 +53,7 @@ function animate() {
         arrMesh2[i].rotation.x += Math.random() * velrot - velrotdesf;
         arrMesh2[i].rotation.z += Math.random() * velrot - velrotdesf;
 
-        var velpos = .1
+        var velpos = 10
         var velposdesf = velpos * .5
 
         arrMesh[i].position.y += Math.random() * velpos - velposdesf;
