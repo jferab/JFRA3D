@@ -5,8 +5,8 @@ var
 
     //camera = new THREE.PerspectiveCamera (45, width/height, 1, 10000);
     camera = new THREE.PerspectiveCamera(45, 1, 1, 10000);
-camera.position.y = 160;
-camera.position.z = 400;
+camera.position.y = 200;
+camera.position.z = -500;
 camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 //var topCamera = new THREE.OrthographicCamera(-110, 110, 110, -110, 10, 2000);
@@ -14,7 +14,7 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 //topCamera.up.set(0, 0, -1);
 
 var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-topCamera.position.set(0, 500, 1500);
+topCamera.position.set(0, 500, -1500);
 topCamera.up.set(0, 1500, 0);
 topCamera.lookAt(new THREE.Vector3(0, 0, 0));
 
@@ -39,7 +39,7 @@ var personaje2 = new THREE.Object3D();
 var posx2 = 300;
 var posy2 = 0;
 var posz2 = 0;
-var mixer;
+var mixer2;
 var Jugador1= new PersonajeRaul();
 
 	//RAUL FIN

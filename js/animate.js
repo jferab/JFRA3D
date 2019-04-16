@@ -83,6 +83,13 @@ function animate() {
     if (mixer) {
         mixer.update(delta);
     }
-    renderer.render(scene, camera);
+	
+	if(avance2 == 1||avance2 == -1){
+		var delta2 = clock.getDelta();
 
+		if ( mixer2 ) mixer2.update( delta2 );
+	}
+	
+    renderer.render(scene, camera);
+	
 }

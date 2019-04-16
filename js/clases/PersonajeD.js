@@ -8,12 +8,15 @@ var eje = null;
 function CargarModelo() {
     var loader = new THREE.FBXLoader();
     loader.load('fbx/Idle.fbx', function (object) {
+		
+		object.add(camera);
         personaje = object;
         personaje.name = "Personaje";
         clips[0] = object.animations[0];
         clips[0].name = "Idle"
         personaje.position.set(0, 0, 0);
         personaje.rotation.set(0, 0, 0);
+		
         scene.add(object);
         Animar();
     });

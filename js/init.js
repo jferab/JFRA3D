@@ -200,6 +200,7 @@ function init() {
 		//scene.add(camera2);
 	
 		//personaje.add( light );
+		// stats
 		
 		
 		//RAUL FIN

@@ -2,7 +2,7 @@ function PersonajeRaul (){
     this.geo;
 	this.mat;
 	this.mesh;
-	this.mixer;
+	this.mixer2;
 	this.objeto = new THREE.Object3D();
     this.nombre
     this.position = {x:300, y:0, z:0}
@@ -15,10 +15,11 @@ function PersonajeRaul (){
 	    var loader = new THREE.FBXLoader();
     	loader.load( 'fbx/Walking2.fbx', function ( object ) {
     
-    		this.mixer = new THREE.AnimationMixer( object );
+    		this.mixer2 = new THREE.AnimationMixer( object );
     
-    		var action = mixer.clipAction( object.animations[ 0 ] );
+    		var action = mixer2.clipAction( object.animations[ 0 ] );
     		action.play();
+			object.add(topCamera);
     		personaje2 = object;
     		object.traverse( function ( child ) {
     
@@ -55,6 +56,28 @@ function PersonajeRaul (){
 		this.objeto.position.z = posz2
 		this.objeto.position.x = posx2
 		this.objeto.rotation.y = angulo2;
+		/*try{
+			//this.Animar();
+		}
+		catch(error){
+			//console.log("no carga")
+		}
+		*/
     }
+	
+	
+	this.Animar = function() {
+		mixer2 = new THREE.AnimationMixer(personaje);
+		var action = mixer2.clipAction(clips[clip]);
+		action.play();
+		personaje2.traverse(function (child) {
+			if (child.isMesh) {
+				child.castShadow = true;
+				child.receiveShadow = true;
+			}
+		});
+}
+	
+	
     
 }
