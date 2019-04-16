@@ -124,7 +124,7 @@ function init() {
 
     var cargarFuente = new THREE.FontLoader();
 
-    cargarFuente.load('lib/font3d/KaoriGelBold_Bold.json', function (font) {
+    cargarFuente.load('lib/font3d/KaoriGel_Medium.json', function (font) {
     //cargarFuente.load('lib/threejs/fonts/helvetiker_regular.typeface.json', function (font) {
         console.log("cargado");
 
