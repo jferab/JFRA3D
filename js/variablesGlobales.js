@@ -9,9 +9,13 @@ camera.position.y = 160;
 camera.position.z = 400;
 camera.lookAt(new THREE.Vector3(0, 0, 0));
 
-var topCamera = new THREE.OrthographicCamera(-110, 110, 110, -110, 10, 2000);
-topCamera.position.set(0, 450, 0);
-topCamera.up.set(0, 0, -1);
+//var topCamera = new THREE.OrthographicCamera(-110, 110, 110, -110, 10, 2000);
+//topCamera.position.set(0, 450, 0);
+//topCamera.up.set(0, 0, -1);
+
+var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
+topCamera.position.set(0, 500, 1500);
+topCamera.up.set(0, 1500, 0);
 topCamera.lookAt(new THREE.Vector3(0, 0, 0));
 
 var
