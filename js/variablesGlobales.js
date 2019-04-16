@@ -20,6 +20,29 @@ topCamera.lookAt(new THREE.Vector3(0, 0, 0));
 
 var
     scene, renderer, control, orbit;
+	
+	
+	//RAUL
+var terreno = new Array();
+var personaje;
+/*var camera2 = new THREE.PerspectiveCamera(45, 1, 1, 10000);
+camera2.position.y = 160;
+camera2.position.z = 400;
+camera2.lookAt(new THREE.Vector3(0, 0, 0));
+*/
+var avance2 = 0
+var girando2 = 0;
+var angulo2 = 0;
+
+//var light;
+var personaje2 = new THREE.Object3D();
+var posx2 = 300;
+var posy2 = 0;
+var posz2 = 0;
+var mixer;
+var Jugador1= new PersonajeRaul();
+
+	//RAUL FIN
 
 //click con mouse
 var raycaster;

@@ -36,6 +36,34 @@ function Teclas() {
                 Animar();
             }
         }
+		
+		
+		        //I
+        if ((event.which == 73|| event.which == 105 )) {
+            //console.log("hola")
+			avance2 = 1;
+        }
+		
+		        //J
+        if ((event.which == 74|| event.which == 106 )) {
+            //console.log("hola")
+			girando2 = 1;
+        }
+		
+		        //K
+        if ((event.which == 75|| event.which == 107 )) {
+            //console.log("hola")
+			avance2 = -1;
+        }
+		
+		        //L
+        if ((event.which == 76|| event.which == 108 )) {
+            //console.log("hola")
+			girando2 = -1;
+        }
+		
+		
+		
     });
 
     $(document).keyup(function (event) {
@@ -68,5 +96,31 @@ function Teclas() {
             clip = 0;
             Animar();
         }
+		
+		
+		   //I
+        if ((event.which == 73|| event.which == 105 )) {
+            //console.log("hola")
+			avance2 = 0;
+        }
+		
+		        //J
+        if ((event.which == 74|| event.which == 106 )) {
+            //console.log("hola")
+			girando2 = 0;
+        }
+		
+		        //K
+        if ((event.which == 75|| event.which == 107 )) {
+            //console.log("hola")
+			avance2 = 0;
+        }
+		
+		        //L
+        if ((event.which == 76|| event.which == 108 )) {
+            //console.log("hola")
+			girando2 = 0;
+        }
+		
     });
 }

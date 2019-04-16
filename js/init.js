@@ -185,6 +185,24 @@ function init() {
         var light = new THREE.PointLight(0xffffff, 100, 1000);
         light.position.set(50, 500, 50);
         scene.add(light);
+		
+		//RAUL
+		for(let q=-500;q<501;q+=50){
+			for(let w=-500;w<501;w+=50){
+			cargarTierra(-q,-20,w,100,100,10,0x0b610b);	//Base 1
+			}
+		}
+		//cargarTierra(50,-20,0,100,100,10,0x0b610b);	//Base 1
+		//cargarTierra(-50,-20,0,100,100,10,0x0b610b);	//Base 1
+		
+		
+		Jugador1.cargarObjeto();
+		//scene.add(camera2);
+	
+		//personaje.add( light );
+		
+		
+		//RAUL FIN
 
         animate();
     });

@@ -71,6 +71,12 @@ function animate() {
         arrMesh[i].position.y = validarPosicion(arrMesh[i].position.y);
         arrMesh[i].position.z = validarPosicion(arrMesh[i].position.z);
     }
+	
+	//RAUL
+	Jugador1.movimiento();
+	//RAUL FIN
+
+	
 
     requestAnimationFrame(animate);
     var delta = clock.getDelta();
