@@ -26,8 +26,8 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 var
     scene, renderer, control, orbit;
-	
-	
+
+
 	//RAUL
 var terreno = new Array();
 var personaje;
@@ -41,7 +41,7 @@ var girando2 = 0;
 var angulo2 = 0;
 
 //var light;
-var personaje2 = new THREE.Object3D();
+var personaje2 = null;
 var posx2 = 300;
 var posy2 = 0;
 var posz2 = 0;

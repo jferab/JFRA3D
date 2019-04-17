@@ -71,25 +71,34 @@ function animate() {
         arrMesh[i].position.y = validarPosicion(arrMesh[i].position.y);
         arrMesh[i].position.z = validarPosicion(arrMesh[i].position.z);
     }
-	
+
 	//RAUL
-	Jugador1.movimiento();
+  if(personaje2 !=null)
+  {
+    Jugador1.movimiento();
+    console.log("Me movi");
+  }
+  else {
+    console.log("No me movi");
+  }
 	//RAUL FIN
 
-	
+
 
     requestAnimationFrame(animate);
     var delta = clock.getDelta();
     if (mixer) {
         mixer.update(delta);
     }
-	
-	if(avance2 == 1||avance2 == -1){
-		var delta2 = clock.getDelta();
 
-		if ( mixer2 ) mixer2.update( delta2 );
-	}
-	
+  	if(avance2 == 1 || avance2 == -1)
+    {
+  		if ( mixer2 )
+      {
+        mixer2.update(delta);
+      }
+  	}
+
     renderer.render(scene, camera);
-	
+
 }

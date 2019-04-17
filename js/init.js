@@ -1,7 +1,8 @@
 function init() {
     container = document.getElementById('contenedorJuego');
     //document.body.appendChild( container );
-    CargarModelo()
+    CargarModelo();
+    Jugador1.cargarObjeto();
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -185,7 +186,7 @@ function init() {
         var light = new THREE.PointLight(0xffffff, 100, 1000);
         light.position.set(50, 500, 50);
         scene.add(light);
-		
+
 		//RAUL
 		for(let q=-500;q<501;q+=50){
 			for(let w=-500;w<501;w+=50){
@@ -194,15 +195,15 @@ function init() {
 		}
 		//cargarTierra(50,-20,0,100,100,10,0x0b610b);	//Base 1
 		//cargarTierra(-50,-20,0,100,100,10,0x0b610b);	//Base 1
-		
-		
-		Jugador1.cargarObjeto();
+
+
+
 		//scene.add(camera2);
-	
+
 		//personaje.add( light );
 		// stats
-		
-		
+
+
 		//RAUL FIN
 
         animate();
