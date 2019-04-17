@@ -76,10 +76,6 @@ function animate() {
   if(personaje2 !=null)
   {
     Jugador1.movimiento();
-    console.log("Me movi");
-  }
-  else {
-    console.log("No me movi");
   }
 	//RAUL FIN
 

@@ -4,11 +4,15 @@ var action = null;
 var mixer = null;
 var clip = 0;
 var eje = null;
+var angulo = null;
+var girando = null;
+var posX = null;
+var posZ = null;
 
 function CargarModelo() {
     var loader = new THREE.FBXLoader();
     loader.load('fbx/Idle.fbx', function (object) {
-		
+
 		object.add(camera);
         personaje = object;
         personaje.name = "Personaje";
@@ -16,7 +20,7 @@ function CargarModelo() {
         clips[0].name = "Idle"
         personaje.position.set(0, 0, 0);
         personaje.rotation.set(0, 0, 0);
-		
+
         scene.add(object);
         Animar();
     });
@@ -45,23 +49,31 @@ function Mover() {
     switch (eje) {
         case 0:
             direccion = 1;
-            personaje.rotation.set(0, 0, 0);
-            personaje.position.set(personaje.position.x, 0, personaje.position.z + direccion);
+            angulo += girando/100;
+            posX += Math.sin(angulo) * direccion * 3;
+            posZ += Math.cos(angulo) * direccion * 3;
+            personaje.position.set(posX, 0, posZ);
             break;
         case 1:
-            direccion = -1;
-            personaje.rotation.set(0, ((3 * Math.PI) * 0.5), 0);
-            personaje.position.set(personaje.position.x + direccion, 0, personaje.position.z);
+            angulo += girando/100;
+            posX += 0;
+            posZ += 0;
+            personaje.position.set(posX, 0, posZ);
+            personaje.rotation.set(0, angulo, 0);
             break;
         case 2:
             direccion = -1;
-            personaje.rotation.set(0, Math.PI, 0);
-            personaje.position.set(personaje.position.x, 0, personaje.position.z + direccion);
+            angulo += girando/100;
+            posX += Math.sin(angulo) * direccion * 3;
+            posZ += Math.cos(angulo) * direccion * 3;
+            personaje.position.set(posX, 0, posZ);
             break;
         case 3:
-            direccion = 1;
-            personaje.rotation.set(0, (Math.PI * 0.5), 0);
-            personaje.position.set(personaje.position.x + direccion, 0, personaje.position.z);
+            angulo += girando/100;
+            posX += 0;
+            posZ += 0;
+            personaje.position.set(posX, 0, posZ);
+            personaje.rotation.set(0, angulo, 0);
             break;
     }
 }
