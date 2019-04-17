@@ -14,14 +14,14 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 //topCamera.up.set(0, 0, -1);
 
 var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-topCamera.position.set(0, 500, -1500);
-topCamera.up.set(0, 1500, 0);
-topCamera.lookAt(new THREE.Vector3(0, 0, 0));
+topCamera.position.set(0, 300, -900);
+//topCamera.up.set(0, 1500d, 0);
+topCamera.lookAt(new THREE.Vector3(0, 300, 0));
 
 var camera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-camera.position.set(0, 500, -1500);
-camera.up.set(0, 1500, 0);
-camera.lookAt(new THREE.Vector3(0, 0, 0));
+camera.position.set(0, 300, -900);
+//camera.up.set(0, 1500, 0);
+camera.lookAt(new THREE.Vector3(0, 300, 0));
 
 
 var
@@ -66,6 +66,8 @@ function onDocumentMouseMove(event) {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 }
+
+var ratonArriba,ratonArriba2;
 
 function onDocumentMouseDown(event) {
     console.log(ratonArriba);

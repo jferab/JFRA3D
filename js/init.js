@@ -120,6 +120,7 @@ function init() {
     scene.add(mesh);
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(largo, 0, -largo)
+
     scene.add(mesh);
 
 
@@ -148,38 +149,50 @@ function init() {
 
         var i = 0;
         for (var x in lista) {
+          var materials = [
+  					new THREE.MeshPhongMaterial( { color: 0xff0000, flatShading: true } ), // front
+  					new THREE.MeshPhongMaterial( { color: 0xff0000 } ) // side
+
+  				];
             var geometry = new THREE.TextGeometry(lista[x].a, {
             //var geometry = new THREE.TextGeometry('あ', {
                 font: font,
-                size: 80,
+                size: 20,
                 height: 5,
                 curveSegments: 12,
                 bevelEnabled: true,
-                bevelThickness: 10,
-                bevelSize: 8,
+                bevelThickness: 3,
+                bevelSize: 3,
                 bevelSegments: 5
             });
             arrMesh[i] = new THREE.Mesh(geometry, materials);
             arrMesh[i].position.y += Math.random() * 1000 - 500;
             arrMesh[i].position.x += Math.random() * 1000 - 500;
             arrMesh[i].position.z += Math.random() * 1000 - 500;
+            arrMesh[i].name = "a"+i;
             scene.add(arrMesh[i]);
             //break;
-            console.log(lista[x].b);
+            //console.log(lista[x].b);
+            var materials = [
+              new THREE.MeshPhongMaterial( { color: 0x0000ff, flatShading: true } ), // front
+              new THREE.MeshPhongMaterial( { color: 0x0000ff } ) // side
+
+            ];
             var geometry = new THREE.TextGeometry(lista[x].b, {
                 font: font,
-                size: 80,
+                size: 20,
                 height: 5,
                 curveSegments: 12,
                 bevelEnabled: true,
-                bevelThickness: 10,
-                bevelSize: 8,
+                bevelThickness: 3,
+                bevelSize: 3,
                 bevelSegments: 5
             });
             arrMesh2[i] = new THREE.Mesh(geometry, materials);
             arrMesh2[i].position.y += Math.random() * 1000 - 500;
             arrMesh2[i].position.x += Math.random() * 1000 - 500;
             arrMesh2[i].position.z += Math.random() * 1000 - 500;
+            arrMesh2[i].name = "b"+i;
             scene.add(arrMesh2[i]);
             i++;
         }
