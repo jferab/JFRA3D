@@ -1,6 +1,6 @@
 var escenario = new Escenario($("#contenedorJuego").width(), $("#contenedorJuego").height());
 console.log(escenario);
-var
+/*var
     //camara = new Camara(escenario.ancho,escenario.alto),
 
     //camera = new THREE.PerspectiveCamera (45, width/height, 1, 10000);
@@ -8,26 +8,26 @@ var
 camera.position.y = 200;
 camera.position.z = -500;
 camera.lookAt(new THREE.Vector3(0, 0, 0));
-
+*/
 //var topCamera = new THREE.OrthographicCamera(-110, 110, 110, -110, 10, 2000);
 //topCamera.position.set(0, 450, 0);
 //topCamera.up.set(0, 0, -1);
 
 var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-topCamera.position.set(0, 500, -1500);
-topCamera.up.set(0, 1500, 0);
-topCamera.lookAt(new THREE.Vector3(0, 0, 0));
+topCamera.position.set(0, 300, -900);
+//topCamera.up.set(0, 1500d, 0);
+topCamera.lookAt(new THREE.Vector3(0, 300, 0));
 
-var topCamera2 = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-topCamera2.position.set(0, 500, -1500);
-topCamera2.up.set(0, 1500, 0);
-topCamera2.lookAt(new THREE.Vector3(0, 0, 0));
+var camera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
+camera.position.set(0, 300, -900);
+//camera.up.set(0, 1500, 0);
+camera.lookAt(new THREE.Vector3(0, 300, 0));
 
 
 var
     scene, renderer, control, orbit;
-	
-	
+
+
 	//RAUL
 var terreno = new Array();
 var personaje;
@@ -41,7 +41,7 @@ var girando2 = 0;
 var angulo2 = 0;
 
 //var light;
-var personaje2 = new THREE.Object3D();
+var personaje2 = null;
 var posx2 = 300;
 var posy2 = 0;
 var posz2 = 0;
@@ -66,6 +66,8 @@ function onDocumentMouseMove(event) {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 }
+
+var ratonArriba,ratonArriba2;
 
 function onDocumentMouseDown(event) {
     console.log(ratonArriba);
