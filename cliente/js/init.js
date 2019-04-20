@@ -1,8 +1,8 @@
 function init() {
     container = document.getElementById('contenedorJuego');
     //document.body.appendChild( container );
-    CargarModelo();
     Jugador1.cargarObjeto();
+    Jugador2.cargarModelo();
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
