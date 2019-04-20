@@ -1,5 +1,0 @@
-Inicio de juego de relacion de elementos.
-hay que unir la esfera de español, con su correspondiente en japones.
-
-Por ahora solo identifica la el nombre de la esfera, falta relacionarlas.
-
