@@ -10,6 +10,7 @@ var posX = null;
 var posZ = null;
 
 function personajeDavid() {
+    this.id="0";
     this.cargarModelo = function() {
         var loader = new THREE.FBXLoader();
         loader.load('fbx/Idle.fbx', function(object) {
@@ -23,12 +24,19 @@ function personajeDavid() {
 
             scene.add(object);
             this.animar();
+
+
+
         });
 
         var loader2 = new THREE.FBXLoader();
         loader2.load('fbx/Walking.fbx', function(object) {
             clips[1] = object.animations[0];
             clips[1].name = "Walk"
+
+                        $("#contenedorCargando").hide()
+                        $("#contenedorJuego").show()
+                        animate();
         });
     }
 
@@ -77,7 +85,7 @@ function personajeDavid() {
                 break;
         }
     }
-    
+
     this.rayoColision = function(){
         var inicioRayo = new THREE.Vector3(posX, 0, posZ);
         var destinoRayo = new THREE.Vector3(posX, -250, posZ);
@@ -86,9 +94,11 @@ function personajeDavid() {
         for (let i = 0; i < intersectsRayoPersonaje.length; i++) {
             if (intersectsRayoPersonaje[i].object.type == "Mesh") {
                 intersectsRayoPersonaje[i].object.material.color.set(0x0000ff);
-                intersectsRayoPersonaje[i].object.material.emissive.set(0x000000);
+                //intersectsRayoPersonaje[i].object.material.emissive.set(0x000000);
                 console.log(intersectsRayoPersonaje[i].object)
             }
+            console.log("col");
+            break;
         }
     }
 }
