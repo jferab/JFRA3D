@@ -1,5 +1,5 @@
 var escenario = new Escenario($("#contenedorJuego").width(), $("#contenedorJuego").height());
-console.log(escenario);
+//console.log(escenario);
 /*var
     //camara = new Camara(escenario.ancho,escenario.alto),
 
@@ -13,24 +13,33 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 //topCamera.position.set(0, 450, 0);
 //topCamera.up.set(0, 0, -1);
 
-var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
+var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto * 2), 1, 3000);
 topCamera.position.set(0, 300, -900);
 //topCamera.up.set(0, 1500d, 0);
 topCamera.lookAt(new THREE.Vector3(0, 300, 0));
 
-var camera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
+var camera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto * 2), 1, 3000);
 camera.position.set(0, 300, -900);
 //camera.up.set(0, 1500, 0);
 camera.lookAt(new THREE.Vector3(0, 300, 0));
 
 
+<<<<<<< HEAD:js/variablesGlobales.js
 var
     scene, renderer, control, orbit;
 var sky;
 
 	//RAUL
+=======
+var scene, renderer, control, orbit;
+
+//RAUL
+var idBloque = 0;
+>>>>>>> master:cliente/js/variablesGlobales.js
 var terreno = new Array();
 var personaje;
+var cantidadJugadores;
+var objetosColision = [];
 /*var camera2 = new THREE.PerspectiveCamera(45, 1, 1, 10000);
 camera2.position.y = 160;
 camera2.position.z = 400;
@@ -46,9 +55,13 @@ var posx2 = 300;
 var posy2 = 0;
 var posz2 = 0;
 var mixer2;
-var Jugador1= new PersonajeRaul();
+var Jugador1 = new PersonajeRaul();
+var Jugador2 = new personajeDavid();
 
-	//RAUL FIN
+//RAUL FIN
+var raycasterPersonaje = new THREE.Raycaster();
+var intersectsRayoPersonaje;
+var direction = new THREE.Vector3();
 
 //click con mouse
 var raycaster;
@@ -67,12 +80,10 @@ function onDocumentMouseMove(event) {
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 }
 
-var ratonArriba,ratonArriba2;
+var ratonArriba, ratonArriba2;
 
 function onDocumentMouseDown(event) {
-    console.log(ratonArriba);
-
-
+    // console.log(ratonArriba);
 }
 
 document.addEventListener('mousemove', onDocumentMouseMove, false);
@@ -101,4 +112,4 @@ lista.push({
     b: "お"
 });
 
-console.log(lista);
+//console.log(lista);
