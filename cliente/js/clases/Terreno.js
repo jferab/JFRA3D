@@ -24,9 +24,10 @@ function Terreno (){
 
 	this.setMat = function (color){
 		//this.mat = new THREE.MeshPhongMaterial( {
-		this.mat = new THREE.MeshBasicMaterial( { 
-			color:color,
-            emissive:color} );
+		this.mat = new THREE.MeshBasicMaterial( {
+			color:color
+			//,emissive:color
+					} );
 	}
 
 	this.setMesh = function (){

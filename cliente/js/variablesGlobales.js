@@ -23,6 +23,7 @@ camera.position.set(0, 300, -900);
 //camera.up.set(0, 1500, 0);
 camera.lookAt(new THREE.Vector3(0, 300, 0));
 
+var raycasterPersonaje = new THREE.Raycaster();
 
 var scene, renderer, control, orbit;
 

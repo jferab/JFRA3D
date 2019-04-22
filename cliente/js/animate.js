@@ -15,16 +15,16 @@ function animate() {
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
 
-    raycaster.setFromCamera(mouse, camera);
+    /*raycaster.setFromCamera(mouse, camera);
     var intersects = raycaster.intersectObjects(scene.children);
     if (intersects.length > 0) {
         ratonArriba = intersects[0].object.name;
     }
     else {
         ratonArriba = "nada"
-    }
-
+    }*/
     if (personaje != null) {
+      // console.log(Jugador2);
         Jugador2.rayoColision();
     }
 

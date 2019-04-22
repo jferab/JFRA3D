@@ -56,7 +56,7 @@ function personajeDavid() {
         var direccion = null;
         switch (eje) {
             case 0:
-                direccion = 1;
+                direccion = 3;
                 angulo += girando / 100;
                 posX += Math.sin(angulo) * direccion * 3;
                 posZ += Math.cos(angulo) * direccion * 3;
@@ -70,7 +70,7 @@ function personajeDavid() {
                 personaje.position.set(posX, 0, posZ);
                 break;
             case 2:
-                direccion = -1;
+                direccion = -3;
                 angulo += girando / 100;
                 posX += Math.sin(angulo) * direccion * 3;
                 posZ += Math.cos(angulo) * direccion * 3;
@@ -87,17 +87,15 @@ function personajeDavid() {
     }
 
     this.rayoColision = function(){
-        var inicioRayo = new THREE.Vector3(posX, 0, posZ);
-        var destinoRayo = new THREE.Vector3(posX, -250, posZ);
-        raycasterPersonaje.set(personaje.position, destinoRayo);
+        var inicioRayo = new THREE.Vector3(personaje.position.x, 10,  personaje.position.z);
+        var destinoRayo = new THREE.Vector3(personaje.position.x, -50, personaje.position.z);
+        raycasterPersonaje.set(inicioRayo,destinoRayo);
         intersectsRayoPersonaje = raycasterPersonaje.intersectObjects(terreno);
-        for (let i = 0; i < intersectsRayoPersonaje.length; i++) {
+        //console.log( intersectsRayoPersonaje );
+        for (let i = 0; i <  intersectsRayoPersonaje.length; i++) {
             if (intersectsRayoPersonaje[i].object.type == "Mesh") {
-                intersectsRayoPersonaje[i].object.material.color.set(0x0000ff);
-                //intersectsRayoPersonaje[i].object.material.emissive.set(0x000000);
-                console.log(intersectsRayoPersonaje[i].object)
+                intersectsRayoPersonaje[i].object.material.color.setHex(0x0000ff);
             }
-            console.log("col");
             break;
         }
     }
