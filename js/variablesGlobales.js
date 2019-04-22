@@ -1,30 +1,37 @@
 var escenario = new Escenario($("#contenedorJuego").width(), $("#contenedorJuego").height());
-console.log(escenario);
-var
+//console.log(escenario);
+/*var
     //camara = new Camara(escenario.ancho,escenario.alto),
 
     //camera = new THREE.PerspectiveCamera (45, width/height, 1, 10000);
     camera = new THREE.PerspectiveCamera(45, 1, 1, 10000);
-camera.position.y = 160;
-camera.position.z = 400;
+camera.position.y = 200;
+camera.position.z = -500;
 camera.lookAt(new THREE.Vector3(0, 0, 0));
-
+*/
 //var topCamera = new THREE.OrthographicCamera(-110, 110, 110, -110, 10, 2000);
 //topCamera.position.set(0, 450, 0);
 //topCamera.up.set(0, 0, -1);
 
-var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho/(escenario.alto*2), 1, 3000);
-topCamera.position.set(0, 500, 1500);
-topCamera.up.set(0, 1500, 0);
-topCamera.lookAt(new THREE.Vector3(0, 0, 0));
+var topCamera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto * 2), 1, 3000);
+topCamera.position.set(0, 300, -900);
+//topCamera.up.set(0, 1500d, 0);
+topCamera.lookAt(new THREE.Vector3(0, 300, 0));
 
-var
-    scene, renderer, control, orbit;
-	
-	
-	//RAUL
+var camera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto * 2), 1, 3000);
+camera.position.set(0, 300, -900);
+//camera.up.set(0, 1500, 0);
+camera.lookAt(new THREE.Vector3(0, 300, 0));
+
+
+var scene, renderer, control, orbit;
+
+//RAUL
+var idBloque = 0;
 var terreno = new Array();
 var personaje;
+var cantidadJugadores;
+var objetosColision = [];
 /*var camera2 = new THREE.PerspectiveCamera(45, 1, 1, 10000);
 camera2.position.y = 160;
 camera2.position.z = 400;
@@ -35,14 +42,21 @@ var girando2 = 0;
 var angulo2 = 0;
 
 //var light;
-var personaje2 = new THREE.Object3D();
+var personaje2 = null;
 var posx2 = 300;
 var posy2 = 0;
 var posz2 = 0;
-var mixer;
-var Jugador1= new PersonajeRaul();
+var mixer2;
+var Jugador1 = new PersonajeRaul();
+var Jugador2 = new personajeDavid();
 
-	//RAUL FIN
+var idsJugadores = new Array();//
+var Jugadores = new Array();//
+
+//RAUL FIN
+var raycasterPersonaje = new THREE.Raycaster();
+var intersectsRayoPersonaje;
+var direction = new THREE.Vector3();
 
 //click con mouse
 var raycaster;
@@ -61,10 +75,10 @@ function onDocumentMouseMove(event) {
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 }
 
+var ratonArriba, ratonArriba2;
+
 function onDocumentMouseDown(event) {
-    console.log(ratonArriba);
-
-
+    // console.log(ratonArriba);
 }
 
 document.addEventListener('mousemove', onDocumentMouseMove, false);
@@ -93,4 +107,4 @@ lista.push({
     b: "お"
 });
 
-console.log(lista);
+//console.log(lista);

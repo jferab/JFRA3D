@@ -1,7 +1,11 @@
 function init() {
     container = document.getElementById('contenedorJuego');
     //document.body.appendChild( container );
-    CargarModelo()
+
+    //Jugador1.cargarObjeto();
+    
+    Jugador2.cargarModelo();
+
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -119,26 +123,27 @@ function init() {
     scene.add(mesh);
     var mesh = new THREE.Mesh(geometry, material);
     mesh.position.set(largo, 0, -largo)
+
     scene.add(mesh);
 
 
     var cargarFuente = new THREE.FontLoader();
 
-    cargarFuente.load('lib/font3d/KaoriGel_Medium.json', function (font) {
-    //cargarFuente.load('lib/threejs/fonts/helvetiker_regular.typeface.json', function (font) {
-        console.log("cargado");
+    cargarFuente.load('lib/font3d/KaoriGel_Medium.json', function(font) {
+        //cargarFuente.load('lib/threejs/fonts/helvetiker_regular.typeface.json', function (font) {
+        //console.log("cargado");
 
         var materials = [
-					new THREE.MeshPhongMaterial( { color: 0xff0000, flatShading: true } ), // front
-					new THREE.MeshPhongMaterial( { color: 0xff0000 } ) // side
-          /*new THREE.MeshBasicMaterial({
-                color: 0xff0000,
-                flatShading: true
-            }),
-          new THREE.MeshBasicMaterial({
-                color: 0xff0000
-            })*/
-				];
+            new THREE.MeshPhongMaterial({ color: 0xff0000, flatShading: true }), // front
+            new THREE.MeshPhongMaterial({ color: 0xff0000 }) // side
+            /*new THREE.MeshBasicMaterial({
+                  color: 0xff0000,
+                  flatShading: true
+              }),
+            new THREE.MeshBasicMaterial({
+                  color: 0xff0000
+              })*/
+        ];
 
         //group = new THREE.Group();
         //group.position.y = 100;
@@ -147,62 +152,76 @@ function init() {
 
         var i = 0;
         for (var x in lista) {
+            var materials = [
+                new THREE.MeshPhongMaterial({ color: 0xff0000, flatShading: true }), // front
+                new THREE.MeshPhongMaterial({ color: 0xff0000 }) // side
+
+            ];
             var geometry = new THREE.TextGeometry(lista[x].a, {
-            //var geometry = new THREE.TextGeometry('あ', {
+                //var geometry = new THREE.TextGeometry('あ', {
                 font: font,
-                size: 80,
+                size: 20,
                 height: 5,
                 curveSegments: 12,
                 bevelEnabled: true,
-                bevelThickness: 10,
-                bevelSize: 8,
+                bevelThickness: 3,
+                bevelSize: 3,
                 bevelSegments: 5
             });
             arrMesh[i] = new THREE.Mesh(geometry, materials);
             arrMesh[i].position.y += Math.random() * 1000 - 500;
             arrMesh[i].position.x += Math.random() * 1000 - 500;
             arrMesh[i].position.z += Math.random() * 1000 - 500;
+            arrMesh[i].name = "a" + i;
             scene.add(arrMesh[i]);
             //break;
-            console.log(lista[x].b);
+            //console.log(lista[x].b);
+            var materials = [
+                new THREE.MeshPhongMaterial({ color: 0x0000ff, flatShading: true }), // front
+                new THREE.MeshPhongMaterial({ color: 0x0000ff }) // side
+
+            ];
             var geometry = new THREE.TextGeometry(lista[x].b, {
                 font: font,
-                size: 80,
+                size: 20,
                 height: 5,
                 curveSegments: 12,
                 bevelEnabled: true,
-                bevelThickness: 10,
-                bevelSize: 8,
+                bevelThickness: 3,
+                bevelSize: 3,
                 bevelSegments: 5
             });
             arrMesh2[i] = new THREE.Mesh(geometry, materials);
             arrMesh2[i].position.y += Math.random() * 1000 - 500;
             arrMesh2[i].position.x += Math.random() * 1000 - 500;
             arrMesh2[i].position.z += Math.random() * 1000 - 500;
+            arrMesh2[i].name = "b" + i;
             scene.add(arrMesh2[i]);
             i++;
         }
         var light = new THREE.PointLight(0xffffff, 100, 1000);
         light.position.set(50, 500, 50);
         scene.add(light);
-		
-		//RAUL
-		for(let q=-500;q<501;q+=50){
-			for(let w=-500;w<501;w+=50){
-			cargarTierra(-q,-20,w,100,100,10,0x0b610b);	//Base 1
-			}
-		}
-		//cargarTierra(50,-20,0,100,100,10,0x0b610b);	//Base 1
-		//cargarTierra(-50,-20,0,100,100,10,0x0b610b);	//Base 1
-		
-		
-		Jugador1.cargarObjeto();
-		//scene.add(camera2);
-	
-		//personaje.add( light );
-		
-		
-		//RAUL FIN
+
+        //RAUL
+        for (let q = -500; q < 501; q += 50) {
+            for (let w = -500; w < 501; w += 50) {
+                cargarTierra(-q, -20, w, 100, 100, 10, 0xffffff);
+                //cargarTierra(-q, -20, w, 100, 100, 10, 0x0b610b); //Base 1
+            }
+        }
+        //cargarTierra(50,-20,0,100,100,10,0x0b610b);	//Base 1
+        //cargarTierra(-50,-20,0,100,100,10,0x0b610b);	//Base 1
+
+
+
+        //scene.add(camera2);
+
+        //personaje.add( light );
+        // stats
+
+
+        //RAUL FIN
 
         animate();
     });

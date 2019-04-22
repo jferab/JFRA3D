@@ -1,126 +1,119 @@
 function Teclas() {
-    $(document).keydown(function (event) {
-        // Tecla W        
+    $(document).keydown(function(event) {
+        // Tecla W
         if ((event.which == 87 || event.which == 119)) {
             eje = 0;
-            Mover();
+            Jugador2.mover();
             if (clip == 0) {
                 clip = 1;
-                Animar();
+                Jugador2.animar();
             }
         }
-        // Tecla S        
-        if ((event.which == 83 || event.which == 115)) {
+        // Tecla S
+        else if ((event.which == 83 || event.which == 115)) {
             eje = 2;
-            Mover();
+            Jugador2.mover();
             if (clip == 0) {
                 clip = 1;
-                Animar();
+                Jugador2.animar();
             }
         }
-        // Tecla A        
-        if ((event.which == 65 || event.which == 97)) {
+        // Tecla A
+        else  if ((event.which == 65 || event.which == 97)) {
             eje = 3;
-            Mover();
+            girando = 1;
+            Jugador2.mover();
             if (clip == 0) {
                 clip = 1;
-                Animar();
+                Jugador2.animar();
             }
         }
-        // Tecla D        
-        if ((event.which == 68 || event.which == 100)) {
+        // Tecla D
+        else if ((event.which == 68 || event.which == 100)) {
             eje = 1;
-            Mover();
+            girando = -1;
+            Jugador2.mover();
             if (clip == 0) {
                 clip = 1;
-                Animar();
+                Jugador2.animar();
             }
         }
-		
-		
-		        //I
-        if ((event.which == 73|| event.which == 105 )) {
-            //console.log("hola")
-			avance2 = 1;
+
+
+        //I
+        if ((event.which == 38)) {
+            avance2 = 1;
         }
-		
-		        //J
-        if ((event.which == 74|| event.which == 106 )) {
+
+        //J
+        if ((event.which == 37)) {
             //console.log("hola")
-			girando2 = 1;
+            girando2 = 1;
         }
-		
-		        //K
-        if ((event.which == 75|| event.which == 107 )) {
+
+        //K
+        if ((event.which == 40)) {
             //console.log("hola")
-			avance2 = -1;
+            avance2 = -1;
         }
-		
-		        //L
-        if ((event.which == 76|| event.which == 108 )) {
+
+        //L
+        if ((event.which == 39)) {
             //console.log("hola")
-			girando2 = -1;
+            girando2 = -1;
         }
-		
-		
-		
     });
 
-    $(document).keyup(function (event) {
+    $(document).keyup(function(event) {
         // Tecla W
         if ((event.which == 87 || event.which == 119) && clip == 1) {
             clip = 0;
-            Animar();
+            Jugador2.animar();
         }
-    });
 
-    $(document).keyup(function (event) {
         // Tecla S
-        if ((event.which == 83 || event.which == 115) && clip == 1) {
+        else if ((event.which == 83 || event.which == 115) && clip == 1) {
             clip = 0;
-            Animar();
+            Jugador2.animar();
         }
-    });
 
-    $(document).keyup(function (event) {
         // Tecla A
-        if ((event.which == 65 || event.which == 97) && clip == 1) {
+        else if ((event.which == 65 || event.which == 97) && clip == 1) {
             clip = 0;
-            Animar();
+            girando = 0;
+            Jugador2.animar();
         }
-    });
 
-    $(document).keyup(function (event) {
         // Tecla D
-        if ((event.which == 68 || event.which == 100) && clip == 1) {
+        else if ((event.which == 68 || event.which == 100) && clip == 1) {
             clip = 0;
-            Animar();
+            girando = 0;
+            Jugador2.animar();
         }
-		
-		
-		   //I
-        if ((event.which == 73|| event.which == 105 )) {
+
+        //I
+        if ((event.which == 38)) {
             //console.log("hola")
-			avance2 = 0;
+            avance2 = 0;
         }
-		
-		        //J
-        if ((event.which == 74|| event.which == 106 )) {
+
+        //J
+        if ((event.which == 37)) {
             //console.log("hola")
-			girando2 = 0;
+            girando2 = 0;
         }
-		
-		        //K
-        if ((event.which == 75|| event.which == 107 )) {
+
+        //K
+        if ((event.which == 40)) {
             //console.log("hola")
-			avance2 = 0;
+            avance2 = 0;
         }
-		
-		        //L
-        if ((event.which == 76|| event.which == 108 )) {
+
+        //L
+        if ((event.which == 39)) {
             //console.log("hola")
-			girando2 = 0;
+            girando2 = 0;
         }
-		
+
     });
 }
