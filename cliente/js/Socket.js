@@ -1,6 +1,6 @@
 // Hago una conexión a un puerto TCP de un servidor que esta a la escucha
-var direccion = "wss://semana09-dkmilo.c9users.io:8082/echobot";
-
+//var direccion = "wss://semana09-dkmilo.c9users.io:8082/echobot";
+var direccion = "wss://jfra2019-jorgefernandez.c9users.io:8082/echobot";
 try {
     var socket = new WebSocket(direccion);
 
