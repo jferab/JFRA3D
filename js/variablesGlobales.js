@@ -26,7 +26,7 @@ camera.lookAt(new THREE.Vector3(0, 300, 0));
 
 var
     scene, renderer, control, orbit;
-
+var sky;
 
 	//RAUL
 var terreno = new Array();
