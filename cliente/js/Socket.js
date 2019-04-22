@@ -6,6 +6,10 @@ try {
 
     // Mensaje cuando se produce la conexion exitosa
     socket.onopen = function(msg) {
+      $("#contenedorCargando").hide()
+      $("#contenedorJuego").show()
+
+        animate();
         console.log("El canal de comunicación se ha abierto");
     };
 
@@ -13,7 +17,7 @@ try {
 
     // Que voy a hacer cuando el servidor me envie un mensaje
     socket.onmessage = function(msg) {
-        console.log(msg.data);
+        //console.log(msg.data);
         var split1 = msg.data.split("|");
         for (var i = 0; i < split1.length; i++) {
             if (split1[i] == "") {
