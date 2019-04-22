@@ -46,8 +46,8 @@ function Terreno (){
 	this.existir = function (){
 		//
 		//console.log("hola");
+		this.mesh.name = "Piso " + idBloque;
 		scene.add( this.mesh );
+		terreno.push( this.mesh );
 	}
-
-
 }

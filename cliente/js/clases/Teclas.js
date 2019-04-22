@@ -10,7 +10,7 @@ function Teclas() {
             }
         }
         // Tecla S
-        if ((event.which == 83 || event.which == 115)) {
+        else if ((event.which == 83 || event.which == 115)) {
             eje = 2;
             Jugador2.mover();
             if (clip == 0) {
@@ -19,7 +19,7 @@ function Teclas() {
             }
         }
         // Tecla A
-        if ((event.which == 65 || event.which == 97)) {
+        else  if ((event.which == 65 || event.which == 97)) {
             eje = 3;
             girando = 1;
             Jugador2.mover();
@@ -29,7 +29,7 @@ function Teclas() {
             }
         }
         // Tecla D
-        if ((event.which == 68 || event.which == 100)) {
+        else if ((event.which == 68 || event.which == 100)) {
             eje = 1;
             girando = -1;
             Jugador2.mover();
@@ -42,7 +42,6 @@ function Teclas() {
 
         //I
         if ((event.which == 38)) {
-            console.log("hola")
             avance2 = 1;
         }
 
@@ -71,27 +70,27 @@ function Teclas() {
             clip = 0;
             Jugador2.animar();
         }
-        
+
         // Tecla S
-        if ((event.which == 83 || event.which == 115) && clip == 1) {
+        else if ((event.which == 83 || event.which == 115) && clip == 1) {
             clip = 0;
             Jugador2.animar();
         }
-        
+
         // Tecla A
-        if ((event.which == 65 || event.which == 97) && clip == 1) {
+        else if ((event.which == 65 || event.which == 97) && clip == 1) {
             clip = 0;
             girando = 0;
             Jugador2.animar();
         }
-        
+
         // Tecla D
-        if ((event.which == 68 || event.which == 100) && clip == 1) {
+        else if ((event.which == 68 || event.which == 100) && clip == 1) {
             clip = 0;
             girando = 0;
             Jugador2.animar();
         }
-        
+
         //I
         if ((event.which == 38)) {
             //console.log("hola")
@@ -115,6 +114,6 @@ function Teclas() {
             //console.log("hola")
             girando2 = 0;
         }
-        
+
     });
 }

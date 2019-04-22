@@ -15,7 +15,7 @@ function personajeDavid() {
         loader.load('fbx/Idle.fbx', function(object) {
             object.add(camera);
             personaje = object;
-            personaje.name = "Personaje";
+            personaje.name = "Jugador_2";
             clips[0] = object.animations[0];
             clips[0].name = "Idle"
             personaje.position.set(0, 0, 0);
@@ -58,8 +58,8 @@ function personajeDavid() {
                 angulo += girando / 100;
                 posX += 0;
                 posZ += 0;
-                personaje.position.set(posX, 0, posZ);
                 personaje.rotation.set(0, angulo, 0);
+                personaje.position.set(posX, 0, posZ);
                 break;
             case 2:
                 direccion = -1;
@@ -72,9 +72,23 @@ function personajeDavid() {
                 angulo += girando / 100;
                 posX += 0;
                 posZ += 0;
-                personaje.position.set(posX, 0, posZ);
                 personaje.rotation.set(0, angulo, 0);
+                personaje.position.set(posX, 0, posZ);
                 break;
+        }
+    }
+    
+    this.rayoColision = function(){
+        var inicioRayo = new THREE.Vector3(posX, 0, posZ);
+        var destinoRayo = new THREE.Vector3(posX, -250, posZ);
+        raycasterPersonaje.set(personaje.position, destinoRayo);
+        intersectsRayoPersonaje = raycasterPersonaje.intersectObjects(terreno);
+        for (let i = 0; i < intersectsRayoPersonaje.length; i++) {
+            if (intersectsRayoPersonaje[i].object.type == "Mesh") {
+                intersectsRayoPersonaje[i].object.material.color.set(0x0000ff);
+                intersectsRayoPersonaje[i].object.material.emissive.set(0x000000);
+                console.log(intersectsRayoPersonaje[i].object)
+            }
         }
     }
 }

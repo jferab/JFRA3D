@@ -1,35 +1,29 @@
 <?php
-
 require_once('websockets.php');
 class echoServer extends WebSocketServer {
-    public $usuarios;
+    public $usuario;
 
     public function process ($user, $message) {
-
-
         // Creamos la columna utc para guardarnos la fecha
-        $this->usuarios[$user->id]['utc'] = date('U');
-
+        $this->usuario[$user->id]['utc'] = date('U');
+        $explotado = explode("|", $message);
         // Creamos la columna mensaje que contiene el mensaje completo a reenviar
-        $this->usuarios[$user->id]['mensaje'] = $message;
+        $this->usuario[$user->id]['idJugador'] = $user->id;    
+        $this->usuario[$user->id]['posX'] = explode(",",$explotado[0])[1];                      // Posicion X
+        $this->usuario[$user->id]['posY'] = explode(",",$explotado[0])[2];                      // Posicion Y
 
-        $longanizassj3 = "Hola";
-        /*foreach ($this->usuarios as &$valor)
-        {
-            //Comprobamos si se ha desconectado
-            if($valor['utc'] > date('U') - 10)
-            {
-        			$longanizassj3 .= $valor[mensaje]."|";
-        		}
-        }*/
-		$this->send($user,$longanizassj3);
-
+        $longaniza = "";
+        foreach ($this->usuario as &$valor) {
+            if($valor['utc'] > date('U') - 15){
+               $longaniza .= $valor['idJugador'].",".$valor['posX'].",".$valor['posY']."|";
+            }
+        }
+		$this->send($user, $longaniza);
     }
 
     protected function connected ($user) {
 
     }
-
     protected function closed ($user) {
 
     }

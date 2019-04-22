@@ -1,5 +1,5 @@
 var escenario = new Escenario($("#contenedorJuego").width(), $("#contenedorJuego").height());
-console.log(escenario);
+//console.log(escenario);
 /*var
     //camara = new Camara(escenario.ancho,escenario.alto),
 
@@ -24,13 +24,14 @@ camera.position.set(0, 300, -900);
 camera.lookAt(new THREE.Vector3(0, 300, 0));
 
 
-var
-    scene, renderer, control, orbit;
-
+var scene, renderer, control, orbit;
 
 //RAUL
+var idBloque = 0;
 var terreno = new Array();
 var personaje;
+var cantidadJugadores;
+var objetosColision = [];
 /*var camera2 = new THREE.PerspectiveCamera(45, 1, 1, 10000);
 camera2.position.y = 160;
 camera2.position.z = 400;
@@ -50,6 +51,9 @@ var Jugador1 = new PersonajeRaul();
 var Jugador2 = new personajeDavid();
 
 //RAUL FIN
+var raycasterPersonaje = new THREE.Raycaster();
+var intersectsRayoPersonaje;
+var direction = new THREE.Vector3();
 
 //click con mouse
 var raycaster;
@@ -71,7 +75,7 @@ function onDocumentMouseMove(event) {
 var ratonArriba, ratonArriba2;
 
 function onDocumentMouseDown(event) {
-    console.log(ratonArriba);
+    // console.log(ratonArriba);
 }
 
 document.addEventListener('mousemove', onDocumentMouseMove, false);
@@ -100,4 +104,4 @@ lista.push({
     b: "お"
 });
 
-console.log(lista);
+//console.log(lista);

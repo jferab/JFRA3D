@@ -19,9 +19,9 @@ function PersonajeRaul() {
 
     //Metodos
     // model
-    this.cargarObjeto = function (nombre) {
+    this.cargarObjeto = function(nombre) {
         var loader = new THREE.FBXLoader();
-        loader.load('fbx/Walking2.fbx', function (object) {
+        loader.load('fbx/Walking2.fbx', function(object) {
 
             mixer2 = new THREE.AnimationMixer(object);
 
@@ -29,28 +29,23 @@ function PersonajeRaul() {
             action.play();
             object.add(topCamera);
             personaje2 = object;
-            object.traverse(function (child) {
-
+            personaje2.name = "Jugador_1"
+            object.traverse(function(child) {
                 if (child.isMesh) {
 
                     child.castShadow = true;
                     child.receiveShadow = true;
-
                 }
 
             });
 
             this.objeto = object;
-            console.log(this.objeto);
             scene.add(this.objeto);
             this.movimiento();
-
         });
-
-
     }
 
-    this.movimiento = function () {
+    this.movimiento = function() {
         angulo2 += girando2 / 10;
         posz2 += Math.cos(angulo2) * avance2 * 3
         posx2 += Math.sin(angulo2) * avance2 * 3
@@ -58,16 +53,14 @@ function PersonajeRaul() {
         //camera2.position.x = posx2
         //camera2.position.z = posz2 - 500;//400
 
-
-
-        personaje2.position.z = posz2
         personaje2.position.x = posx2
         personaje2.rotation.y = angulo2;
+        personaje2.position.z = posz2
 
 
-        this.objeto.position.z = posz2
         this.objeto.position.x = posx2
         this.objeto.rotation.y = angulo2;
+        this.objeto.position.z = posz2
         /*try{
         	//this.Animar();
         }
@@ -77,18 +70,18 @@ function PersonajeRaul() {
         */
     }
 
-/*
-    this.Animar = function () {
-        mixer2 = new THREE.AnimationMixer(personaje);
-        var action = mixer2.clipAction(clips[clip]);
-        action.play();
-        personaje2.traverse(function (child) {
-            if (child.isMesh) {
-                child.castShadow = true;
-                child.receiveShadow = true;
-            }
-        });
-    }*/
+    /*
+        this.Animar = function () {
+            mixer2 = new THREE.AnimationMixer(personaje);
+            var action = mixer2.clipAction(clips[clip]);
+            action.play();
+            personaje2.traverse(function (child) {
+                if (child.isMesh) {
+                    child.castShadow = true;
+                    child.receiveShadow = true;
+                }
+            });
+        }*/
 
 
 
