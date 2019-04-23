@@ -12,6 +12,8 @@ var personajes = new Array();//cambio
 personajes.push(0);///////////////////
 var mixers = new Array();//cambio
 var actiones = new Array();//cambio
+mixers.push(0);////
+actiones.push(0);////
 
 
 function personajeDavid() {

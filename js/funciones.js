@@ -99,6 +99,7 @@ function actualizarPosicion(longitud2){
 				if(idsJugadores[t]==longitud2[p].split(",")[0]){
 					personajes[t].position.z = longitud2[p].split(",")[2];				
 					personajes[t].position.x = longitud2[p].split(",")[1];
+					personajes[t].rotation.y = longitud2[p].split(",")[3];
 				}
 			}
 			

@@ -11,12 +11,13 @@ class echoServer extends WebSocketServer {
         $this->usuario[$user->id]['idJugador'] = $user->id;
         $this->usuario[$user->id]['posX'] = explode(",",$explotado[0])[1];                      // Posicion X
         $this->usuario[$user->id]['posY'] = explode(",",$explotado[0])[2];                      // Posicion Y
-
-         //$longaniza = "";//cambio Raul 23/04/2019
+		$this->usuario[$user->id]['angulo'] = explode(",",$explotado[0])[3];  
+        
+        //$longaniza = "";//cambio Raul 23/04/2019
 		$longaniza = $user->id."|";
         foreach ($this->usuario as &$valor) {
             if($valor['utc'] > date('U') - 15){
-               $longaniza .= $valor['idJugador'].",".$valor['posX'].",".$valor['posY']."|";
+               $longaniza .= $valor['idJugador'].",".$valor['posX'].",".$valor['posY'].",".$valor['angulo']."|";
             }
         }
 		$this->send($user, $longaniza);
