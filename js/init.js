@@ -3,7 +3,7 @@ function init() {
     //document.body.appendChild( container );
 
     //Jugador1.cargarObjeto();
-    
+
     Jugador2.cargarModelo();
 
     renderer = new THREE.WebGLRenderer();
@@ -19,8 +19,8 @@ function init() {
 
 
     scene = new THREE.Scene();
-    scene.add(new THREE.GridHelper(1000, 10));
-    scene.add(new THREE.AxesHelper(100));
+    //scene.add(new THREE.GridHelper(1000, 10));
+    //scene.add(new THREE.AxesHelper(100));
     //var light = new THREE.DirectionalLight( 0xffffff, 1000 );
     //var light = new THREE.PointLight( 0xff0000, 1, 1000 );
 
@@ -28,84 +28,7 @@ function init() {
     //scene.add( light );
 
 
-    //var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
-
-    /* Crear de crear esferas
-    for (var i = 0; i < 5; i++) {
-        var img;
-        switch (i) {
-            case 0:
-                img = 'AJ';
-                break;
-            case 1:
-                img = 'IJ';
-                break;
-            case 2:
-                img = 'UJ';
-                break;
-            case 3:
-                img = 'EJ';
-                break;
-            case 4:
-                img = 'OJ';
-                break;
-            default:
-
-        }
-        var material = new THREE.MeshBasicMaterial({
-            map: THREE.ImageUtils.loadTexture('imagenes/' + img + '.png')
-        })
-        //var geometry = new THREE.CubeGeometry( 100, 100, 100 );
-        var geometry = new THREE.SphereGeometry(50, 32, 32);
-        //var material = new THREE.MeshNormalMaterial();
-        arrMesh[i] = new THREE.Mesh(geometry, material);
-        arrMesh[i].name = img
-
-
-        var img;
-        switch (i) {
-            case 0:
-                img = 'A';
-                break;
-            case 1:
-                img = 'I';
-                break;
-            case 2:
-                img = 'U';
-                break;
-            case 3:
-                img = 'E';
-                break;
-            case 4:
-                img = 'O';
-                break;
-            default:
-
-        }
-        var material = new THREE.MeshBasicMaterial({
-            map: THREE.ImageUtils.loadTexture('imagenes/' + img + '.png')
-        })
-        //var geometry = new THREE.CubeGeometry( 100, 100, 100 );
-        var geometry = new THREE.SphereGeometry(50, 32, 32);
-        //var material = new THREE.MeshNormalMaterial();
-        arrMesh2[i] = new THREE.Mesh(geometry, material);
-        arrMesh2[i].name = img
-
-        arrMesh2[i].position.y = Math.random() * 1000 - 500;;
-        arrMesh2[i].position.z = Math.random() * 1000 - 500;
-        arrMesh2[i].position.x = Math.random() * 1000 - 500;
-        arrMesh[i].position.y = Math.random() * 1000 - 500;;
-        arrMesh[i].position.z = Math.random() * 1000 - 500;
-        arrMesh[i].position.x = Math.random() * 1000 - 500;
-        //console.log(arrMesh[i].position);
-        //arrMesh[i].rotation.y = Math.PI;
-        //scene.add( arrMesh[i] );
-        //scene.add( arrMesh2[i] );
-
-
-    }
-    */ //Fin de crear esferas
-    var largo = 500
+    /*var largo = 500
     var geometry = new THREE.CubeGeometry(10, largo, 10);
     var material = new THREE.MeshBasicMaterial({
         color: 0xffff00
@@ -125,28 +48,17 @@ function init() {
     mesh.position.set(largo, 0, -largo)
 
     scene.add(mesh);
-
+*/
 
     var cargarFuente = new THREE.FontLoader();
 
     cargarFuente.load('lib/font3d/KaoriGel_Medium.json', function(font) {
-        //cargarFuente.load('lib/threejs/fonts/helvetiker_regular.typeface.json', function (font) {
-        //console.log("cargado");
 
         var materials = [
             new THREE.MeshPhongMaterial({ color: 0xff0000, flatShading: true }), // front
             new THREE.MeshPhongMaterial({ color: 0xff0000 }) // side
-            /*new THREE.MeshBasicMaterial({
-                  color: 0xff0000,
-                  flatShading: true
-              }),
-            new THREE.MeshBasicMaterial({
-                  color: 0xff0000
-              })*/
         ];
 
-        //group = new THREE.Group();
-        //group.position.y = 100;
         arrMesh[0] = new THREE.Mesh(geometry, materials);
         scene.add(arrMesh[0]);
 
@@ -158,7 +70,6 @@ function init() {
 
             ];
             var geometry = new THREE.TextGeometry(lista[x].a, {
-                //var geometry = new THREE.TextGeometry('あ', {
                 font: font,
                 size: 20,
                 height: 5,
@@ -173,9 +84,8 @@ function init() {
             arrMesh[i].position.x += Math.random() * 1000 - 500;
             arrMesh[i].position.z += Math.random() * 1000 - 500;
             arrMesh[i].name = "a" + i;
-            scene.add(arrMesh[i]);
-            //break;
-            //console.log(lista[x].b);
+            //scene.add(arrMesh[i]);
+
             var materials = [
                 new THREE.MeshPhongMaterial({ color: 0x0000ff, flatShading: true }), // front
                 new THREE.MeshPhongMaterial({ color: 0x0000ff }) // side
@@ -196,33 +106,25 @@ function init() {
             arrMesh2[i].position.x += Math.random() * 1000 - 500;
             arrMesh2[i].position.z += Math.random() * 1000 - 500;
             arrMesh2[i].name = "b" + i;
-            scene.add(arrMesh2[i]);
+            //scene.add(arrMesh2[i]);
             i++;
         }
         var light = new THREE.PointLight(0xffffff, 100, 1000);
         light.position.set(50, 500, 50);
         scene.add(light);
 
-        //RAUL
-        for (let q = -500; q < 501; q += 50) {
-            for (let w = -500; w < 501; w += 50) {
-                cargarTierra(-q, -20, w, 100, 100, 10, 0xffffff);
+        var longCuadro = 50;
+        var porCuadro=1;
+        for (let q = -500; q < 501; q += longCuadro) {
+            for (let w = -500; w < 501; w += longCuadro) {
+                cargarTierra(-q, 0, w, longCuadro*porCuadro, longCuadro*porCuadro, 10, 0xffffff);
                 //cargarTierra(-q, -20, w, 100, 100, 10, 0x0b610b); //Base 1
             }
         }
-        //cargarTierra(50,-20,0,100,100,10,0x0b610b);	//Base 1
-        //cargarTierra(-50,-20,0,100,100,10,0x0b610b);	//Base 1
+        for (var x in terreno){
+          //console.log(terreno[x].position);
+        }
 
-
-
-        //scene.add(camera2);
-
-        //personaje.add( light );
-        // stats
-
-
-        //RAUL FIN
-
-        animate();
+        //animate();
     });
 }

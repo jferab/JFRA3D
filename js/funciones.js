@@ -56,15 +56,16 @@ function cargarTierra(posX, posY, posZ, largo, ancho, altura, color) {
 
     //scene.add(objetoTemp);    //terreno.push(objetoTemp);
 }
-//RAUL FIN
-
 
 function crearJugadores(msg){
 	var longitud = msg.data.split("|");
-	var longitud2 ="";
+	idMio=longitud[0];
+	//var longitud2 ="";
 	var veraz=true;
 	for(let r=0;r<longitud.length;r++){
+		//console.log(idsJugadores.length);
 		for(let t =0;t<idsJugadores.length;t++){
+			//console.log(idsJugadores.length+"v");
 			if(idsJugadores[t]!=longitud[r].split(",")[0]){
 				veraz=true;
 			}else{
@@ -75,11 +76,30 @@ function crearJugadores(msg){
 		}
 		if(veraz==true){
 			//console.log(longitud[r].split(",")[0].length);
-			if(longitud[r].split(",")[0].length>2){
+			if(longitud[r].split(",")[0].length>2&&idMio!=longitud[r].split(",")[0]){
 				idsJugadores.push(longitud[r].split(",")[0]);
 				//console.log(idsJugadores.length);
 				Jugadores[idsJugadores.length-1]=new personajeDavid();
 				Jugadores[idsJugadores.length-1].cargarModelo2();
+			}
+			
+		}
+	}
+	actualizarPosicion(longitud); 
+	
+	
+}
+
+function actualizarPosicion(longitud2){
+	
+	
+	for(let t =0;t<personajes.length;t++){
+		if(t!=0){
+			for(let p=0;p<longitud2.length;p++){
+				if(idsJugadores[t]==longitud2[p].split(",")[0]){
+					personajes[t].position.z = longitud2[p].split(",")[2];				
+					personajes[t].position.x = longitud2[p].split(",")[1];
+				}
 			}
 			
 		}
@@ -90,27 +110,5 @@ function crearJugadores(msg){
 	
 	
 	
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//RAUL FIN
