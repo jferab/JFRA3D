@@ -27,7 +27,18 @@ function validarPosicionY(pos) {
 
     return pos;
 }
+function agregarLineas(x,z){
+  var largo = 500
+  var grueso = 1;
+  var geometry = new THREE.CubeGeometry(grueso, largo, grueso);
+  var material = new THREE.MeshBasicMaterial({
+      color: 0xffff00
+  });
+  var mesh = new THREE.Mesh(geometry, material);
+  mesh.position.set(x, 0, z)
+  return mesh;
 
+}
 //RAUL
 function cargarTierra(posX, posY, posZ, largo, ancho, altura, color) {
 

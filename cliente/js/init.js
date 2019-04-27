@@ -113,18 +113,20 @@ function init() {
         light.position.set(50, 500, 50);
         scene.add(light);
 
-        var longCuadro = 50;
-        var porCuadro=1;
-        for (let q = -500; q < 501; q += longCuadro) {
-            for (let w = -500; w < 501; w += longCuadro) {
-                cargarTierra(-q, 0, w, longCuadro*porCuadro, longCuadro*porCuadro, 10, 0xffffff);
+        var longCuadro = 1;
+        var porCuadro=.95;
+        for (let q = 0; q < 30; q += longCuadro) {
+            for (let w = 0; w < 30; w += longCuadro) {
+              var geo = new THREE.BoxGeometry( 20,20,20);
+          		var mat = new THREE.MeshBasicMaterial( {color:0xffffff})
+              var tmpmesh = new THREE.Mesh( geo, mat );
+              scene.add(tmpmesh);
+              tmpmesh.position.set(q*20,-10,w*20);
+              //tmpmesh.scale.set(20,20,20);
+              tmpmesh.name = "base"
+                //cargarTierra(q, -10, w, longCuadro*porCuadro, longCuadro*porCuadro, 20, 0xffffff);
                 //cargarTierra(-q, -20, w, 100, 100, 10, 0x0b610b); //Base 1
             }
         }
-        for (var x in terreno){
-          //console.log(terreno[x].position);
-        }
-
-        //animate();
     });
 }

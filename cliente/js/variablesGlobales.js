@@ -18,7 +18,7 @@ topCamera.position.set(0, 300, -900);
 //topCamera.up.set(0, 1500d, 0);
 topCamera.lookAt(new THREE.Vector3(0, 300, 0));
 */
-var camera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto * 2), 1, 3000);
+var camera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto ), 1, 3000);
 camera.position.set(0, 300, -900);
 //camera.up.set(0, 1500, 0);
 camera.lookAt(new THREE.Vector3(0, 300, 0));
@@ -42,6 +42,8 @@ var avance2 = 0
 var girando2 = 0;
 var angulo2 = 0;
 
+var banRay = true;
+
 //var light;
 var personaje2 = null;
 var posx2 = 300;
@@ -53,6 +55,11 @@ var Jugador2 = new personajeDavid();
 
 //RAUL FIN
 var raycasterPersonaje = new THREE.Raycaster();
+
+var movX = -200;
+/*raycasterPersonaje.far = 100;
+raycasterPersonajelinePrecision  = 1;
+*/
 var intersectsRayoPersonaje;
 var direction = new THREE.Vector3();
 
