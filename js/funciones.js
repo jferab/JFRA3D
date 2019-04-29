@@ -58,6 +58,7 @@ function cargarTierra(posX, posY, posZ, largo, ancho, altura, color) {
 }
 
 function crearJugadores(msg){
+	//console.log("llllllloloolo");
 	var longitud = msg.data.split("|");
 	idMio=longitud[0];
 	//var longitud2 ="";
@@ -88,6 +89,7 @@ function crearJugadores(msg){
 	actualizarPosicion(longitud); 
 	
 	
+	
 }
 
 function actualizarPosicion(longitud2){
@@ -106,10 +108,54 @@ function actualizarPosicion(longitud2){
 		}
 	}
 	
+	sacarJugadores(longitud2); 
+	
+	
+	
+	
+}
+
+
+function sacarJugadores(longitud2){
+	
+	
+	for(let t =0;t<personajes.length;t++){
+		var existe = true;
+		if(t!=0){
+			for(let p=0;p<longitud2.length;p++){
+				if(idsJugadores[t]==longitud2[p].split(",")[0]){
+					existe = true;
+					p=11111110;
+				}else{
+					existe = false;
+				}
+			}
+			if(existe == false){
+				idsJugadores.splice(t, 1);
+				mixers.splice(t, 1);
+				actiones.splice(t, 1);
+				scene.remove(personajes[t]);
+				personajes.splice(t, 1);
+				t=111111111;
+			}
+			
+		}
+	}
+	
 	
 	
 	
 	
 	
 }
+
+
+
+
+
+
+
+
+
+
 //RAUL FIN
