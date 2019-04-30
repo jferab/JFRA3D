@@ -64,7 +64,7 @@ function animate() {
     }
 
     var idJugador = 0;
-    var msg = idJugador + "," + posX + "," + posZ + "," + angulo + "|";
+   var msg = idJugador + "," + posX + "," + posZ + "," + angulo + "|";
 
     try {
         // Le envia la longaniza al socket
