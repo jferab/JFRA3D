@@ -8,6 +8,7 @@ var angulo = null;
 var girando = null;
 var posX = null;
 var posZ = null;
+
 var personajes = new Array();//cambio
 personajes.push(0);///////////////////
 var mixers = new Array();//cambio
@@ -15,12 +16,14 @@ var actiones = new Array();//cambio
 mixers.push(0);////
 actiones.push(0);////
 
-
 function personajeDavid() {
     this.id="0";
     this.cargarModelo = function() {
         var loader = new THREE.FBXLoader();
         loader.load('fbx/Idle.fbx', function(object) {
+
+            //object.add(agregarLineas(0,0));
+
             object.add(camera);
             personaje = object;
             personaje.name = "Jugador_2";
@@ -41,9 +44,9 @@ function personajeDavid() {
             clips[1] = object.animations[0];
             clips[1].name = "Walk"
 
-                        $("#contenedorCargando").hide()
-                        $("#contenedorJuego").show()
-                        animate();
+            $("#contenedorCargando").hide()
+            $("#contenedorJuego").show()
+            animate();
         });
     }
 
@@ -94,20 +97,25 @@ function personajeDavid() {
     }
 
     this.rayoColision = function(){
-        var inicioRayo = new THREE.Vector3(personaje.position.x, 10,  personaje.position.z);
-        var destinoRayo = new THREE.Vector3(personaje.position.x, -50, personaje.position.z);
-        raycasterPersonaje.set(inicioRayo,destinoRayo);
-        intersectsRayoPersonaje = raycasterPersonaje.intersectObjects(terreno);
-        //console.log( intersectsRayoPersonaje );
-        for (let i = 0; i <  intersectsRayoPersonaje.length; i++) {
-            if (intersectsRayoPersonaje[i].object.type == "Mesh") {
-                intersectsRayoPersonaje[i].object.material.color.setHex(0x0000ff);
-            }
-            break;
+      if(banRay){
+        banRay = false;
+        var inicioRayo = new THREE.Vector3(personaje.position.x, 0,  personaje.position.z);
+        var destinoRayo = new THREE.Vector3(personaje.position.x, -200, personaje.position.z);
+        //console.log(inicioRayo,destinoRayo );
+
+        var ray = new THREE.Raycaster(inicioRayo, destinoRayo);
+        intersectsRayoPersonaje = ray.intersectObjects(scene.children);
+        if(intersectsRayoPersonaje.length != 0){
+          if(intersectsRayoPersonaje[0].object.name =="base"){
+            intersectsRayoPersonaje[0].object.material.color.setHex(0x0000ff);
+          }
         }
-    }
-	
-	this.cargarModelo2 = function() {
+        banRay = true;
+      }
+
+  }
+  
+  this.cargarModelo2 = function() {
 		//console.log("hola aqui toy3");
         var loader3 = new THREE.FBXLoader();
 		//console.log("hola aqui toy3gewg");
@@ -145,4 +153,8 @@ function personajeDavid() {
         });
 		//console.log("hola aqui toy555");
     }
+  
+  
+   
+  
 }
