@@ -53,6 +53,14 @@ var mixer2;
 var Jugador1 = new PersonajeRaul();
 var Jugador2 = new personajeDavid();
 
+var idsJugadores = new Array();//
+var Jugadores = new Array();//
+var idMio=0;//cambio
+idsJugadores.push(0);
+Jugadores.push(0);
+
+
+
 //RAUL FIN
 var raycasterPersonaje = new THREE.Raycaster();
 

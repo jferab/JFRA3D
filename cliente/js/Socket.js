@@ -25,6 +25,7 @@ try {
                 cantidadJugadores = split1.length;
             }
         }
+		crearJugadores(msg);
     }
 }
 

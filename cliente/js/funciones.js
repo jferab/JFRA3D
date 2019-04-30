@@ -67,4 +67,114 @@ function cargarTierra(posX, posY, posZ, largo, ancho, altura, color) {
 
     //scene.add(objetoTemp);    //terreno.push(objetoTemp);
 }
+
+function crearJugadores(msg){
+	//console.log("llllllloloolo");
+	var longitud = msg.data.split("|");
+	idMio=longitud[0];
+	//var longitud2 ="";
+	var veraz=true;
+	for(let r=0;r<longitud.length;r++){
+		//console.log(idsJugadores.length);
+		for(let t =0;t<idsJugadores.length;t++){
+			//console.log(idsJugadores.length+"v");
+			if(idsJugadores[t]!=longitud[r].split(",")[0]){
+				veraz=true;
+			}else{
+				veraz=false;
+				//console.log("hola aqui toy1");
+				t=idsJugadores.length+200;
+			}
+		}
+		if(veraz==true){
+			//console.log(longitud[r].split(",")[0].length);
+			if(longitud[r].split(",")[0].length>2&&idMio!=longitud[r].split(",")[0]){
+				idsJugadores.push(longitud[r].split(",")[0]);
+				//console.log(idsJugadores.length);
+				Jugadores[idsJugadores.length-1]=new personajeDavid();
+				Jugadores[idsJugadores.length-1].cargarModelo2();
+			}
+			
+		}
+	}
+	actualizarPosicion(longitud); 
+	
+	
+	
+}
+
+function actualizarPosicion(longitud2){
+	
+	
+	for(let t =0;t<personajes.length;t++){
+		if(t!=0){
+			for(let p=0;p<longitud2.length;p++){
+				if(idsJugadores[t]==longitud2[p].split(",")[0]){
+					personajes[t].position.z = longitud2[p].split(",")[2];				
+					personajes[t].position.x = longitud2[p].split(",")[1];
+					personajes[t].rotation.y = longitud2[p].split(",")[3];
+				}
+			}
+			
+		}
+	}
+	
+	sacarJugadores(longitud2); 
+	
+	
+	
+	
+}
+
+
+function sacarJugadores(longitud2){
+	
+	
+	for(let t =0;t<personajes.length;t++){
+		var existe = true;
+		if(t!=0){
+			for(let p=0;p<longitud2.length;p++){
+				if(idsJugadores[t]==longitud2[p].split(",")[0]){
+					existe = true;
+					p=11111110;
+				}else{
+					existe = false;
+				}
+			}
+			if(existe == false){
+				idsJugadores.splice(t, 1);
+				mixers.splice(t, 1);
+				actiones.splice(t, 1);
+				scene.remove(personajes[t]);
+				personajes.splice(t, 1);
+				t=111111111;
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //RAUL FIN

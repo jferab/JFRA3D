@@ -64,7 +64,7 @@ function animate() {
     }
 
     var idJugador = 0;
-    var msg = idJugador + "," + posX + "," + posZ + "|";
+   var msg = idJugador + "," + posX + "," + posZ + "," + angulo + "|";
 
     try {
         // Le envia la longaniza al socket
@@ -80,6 +80,11 @@ function animate() {
     if (mixer) {
         mixer.update(delta);
     }
+	for(let u=0;u<mixers.length;u++){
+		if (mixers[u]&&u!=0) {
+			mixers[u].update(delta);
+		}
+	}
 
     if (avance2 == 1 || avance2 == -1) {
         if (mixer2) {
