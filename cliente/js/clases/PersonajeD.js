@@ -9,6 +9,13 @@ var girando = null;
 var posX = null;
 var posZ = null;
 
+var personajes = new Array();//cambio
+personajes.push(0);///////////////////
+var mixers = new Array();//cambio
+var actiones = new Array();//cambio
+mixers.push(0);////
+actiones.push(0);////
+
 function personajeDavid() {
     this.id="0";
     this.cargarModelo = function() {
@@ -107,4 +114,47 @@ function personajeDavid() {
       }
 
   }
+  
+  this.cargarModelo2 = function() {
+		//console.log("hola aqui toy3");
+        var loader3 = new THREE.FBXLoader();
+		//console.log("hola aqui toy3gewg");
+		
+        loader3.load('fbx/Idle.fbx', function(object) {
+           // console.log("hola aqui toy8765gsdghdg");
+            personajes.push(object);
+			//console.log( personajes[personajes.length-1]);
+            personajes[personajes.length-1].name = "Jugador" + idsJugadores[personajes.length-1];
+            clips[0] = object.animations[0];
+            clips[0].name = "Idle"
+            personajes[personajes.length-1].position.set(0, 0, 0);
+            personajes[personajes.length-1].rotation.set(0, 0, 0);
+
+            scene.add(object);
+			//console.log(object);
+            mixers[personajes.length-1] = new THREE.AnimationMixer(personajes[personajes.length-1]);
+			actiones[personajes.length-1] = mixers[personajes.length-1].clipAction(clips[clip]);
+			actiones[personajes.length-1].play();
+			personajes[personajes.length-1].traverse(function(child) {
+				if (child.isMesh) {
+					child.castShadow = true;
+					child.receiveShadow = true;
+				}
+			});
+			
+			//console.log("hola aqui toy4");
+			
+        });
+
+        var loader4 = new THREE.FBXLoader();
+        loader4.load('fbx/Walking.fbx', function(object) {
+            clips[1] = object.animations[0];
+            clips[1].name = "Walk"
+        });
+		//console.log("hola aqui toy555");
+    }
+  
+  
+   
+  
 }
