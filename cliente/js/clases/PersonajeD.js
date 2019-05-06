@@ -114,12 +114,12 @@ function personajeDavid() {
       }
 
   }
-  
+
   this.cargarModelo2 = function() {
 		//console.log("hola aqui toy3");
         var loader3 = new THREE.FBXLoader();
 		//console.log("hola aqui toy3gewg");
-		
+
         loader3.load('fbx/Idle.fbx', function(object) {
            // console.log("hola aqui toy8765gsdghdg");
             personajes.push(object);
@@ -141,9 +141,9 @@ function personajeDavid() {
 					child.receiveShadow = true;
 				}
 			});
-			
+
 			//console.log("hola aqui toy4");
-			
+
         });
 
         var loader4 = new THREE.FBXLoader();
@@ -153,8 +153,8 @@ function personajeDavid() {
         });
 		//console.log("hola aqui toy555");
     }
-  
-  
-   
-  
+
+
+
+
 }

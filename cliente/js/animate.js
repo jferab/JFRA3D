@@ -1,4 +1,12 @@
 function animate() {
+  renderer.setAnimationLoop( render);
+}
+
+function render() {
+  camera.position.set(0, 300, -900);
+  //camera.up.set(0, 1500, 0);
+  camera.lookAt(new THREE.Vector3(0, 300, 0));
+
     var SCREEN_W, SCREEN_H;
     SCREEN_W = window.innerWidth;
     SCREEN_H = window.innerHeight;
@@ -75,7 +83,7 @@ function animate() {
     }
 
 
-    requestAnimationFrame(animate);
+    //requestAnimationFrame(animate);
     var delta = clock.getDelta();
     if (mixer) {
         mixer.update(delta);

@@ -6,10 +6,6 @@ function init() {
 
     Jugador2.cargarModelo();
 
-    renderer = new THREE.WebGLRenderer();
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    container.appendChild(renderer.domElement);
 
 
     /*camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 3000 );
@@ -49,7 +45,7 @@ function init() {
 
     scene.add(mesh);
 */
-
+    console.log(camera.position);
     var cargarFuente = new THREE.FontLoader();
 
     cargarFuente.load('lib/font3d/KaoriGel_Medium.json', function(font) {

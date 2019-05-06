@@ -18,14 +18,26 @@ topCamera.position.set(0, 300, -900);
 //topCamera.up.set(0, 1500d, 0);
 topCamera.lookAt(new THREE.Vector3(0, 300, 0));
 */
+
+var scene, renderer, control, orbit;
+var container = document.getElementById('contenedorJuego');
+
+    renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    container.appendChild(renderer.domElement);
+
+    //Realidad virtual
+			document.body.appendChild( WEBVR.createButton( renderer, { frameOfReferenceType: 'eye-level' } ) );
+
+    renderer.vr.enabled = true;
+
 var camera = new THREE.PerspectiveCamera(50, escenario.ancho / (escenario.alto ), 1, 3000);
 camera.position.set(0, 300, -900);
 //camera.up.set(0, 1500, 0);
 camera.lookAt(new THREE.Vector3(0, 300, 0));
 
 var raycasterPersonaje = new THREE.Raycaster();
-
-var scene, renderer, control, orbit;
 
 //RAUL
 var idBloque = 0;
