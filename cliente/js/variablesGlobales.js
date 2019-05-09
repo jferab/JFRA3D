@@ -71,6 +71,20 @@ var idMio=0;//cambio
 idsJugadores.push(0);
 Jugadores.push(0);
 
+var coloreando= new Array();//
+coloreando.push(0);
+coloreando.push("0xff0000");
+coloreando.push("0x00ff00");
+coloreando.push("0xffff00");
+coloreando.push("0xcceeff");
+coloreando.push("0xb404ae");
+coloreando.push("0x240b3b");
+coloreando.push("0xff00ff");
+coloreando.push("0x0dd588");
+//console.log(coloreando[1]);
+var Color="0x0000ff";
+var setColorUnaVez=true;
+var contLocal=1;
 
 
 //RAUL FIN

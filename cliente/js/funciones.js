@@ -154,16 +154,52 @@ function sacarJugadores(longitud2){
 	}
 	
 	
-	
+	colorJugador(longitud2);
 	
 	
 	
 }
 
+function colorJugador(longitud2){
+//var cont0=0;
+
+	
+	if(setColorUnaVez==true){
+		for(let c=0;c<longitud2.length;c++){
+			if(idMio!=longitud2[c].split(",")[0]){
+				if(Color==longitud2[c].split(",")[4]){
+					Color=coloreando[contLocal];
+					
+					contLocal++;
+					colorJugador(longitud2);
+					setColorUnaVez=true;
+				}else{
+					setColorUnaVez=false;
+				}
+			}
+		}
+	}
+	
+	for(let m=0;m<scene.children.length;m++){
+		if(scene.children[m].name=="base")
+		{
+			for(let p=0;p<longitud2.length;p++){
+				//if(scene.children[m].position.x==140&&scene.children[m].position.z==0){
+				if(longitud2[p].split(",")[1]>scene.children[m].position.x&&longitud2[p].split(",")[1]<=scene.children[m].position.x+20
+				&&longitud2[p].split(",")[2]>scene.children[m].position.z&&longitud2[p].split(",")[2]<=scene.children[m].position.z+20
+				&&idMio!=longitud2[p].split(",")[0]){
+					//console.log(scene.children[m].material.color.setHex(coloreando[1]));
+					//cont0++;
+					scene.children[m].material.color.setHex(longitud2[p].split(",")[4])
+				}
+			}
+			
+		}
+	}
+	//console.log(cont0);
 
 
-
-
+}
 
 
 

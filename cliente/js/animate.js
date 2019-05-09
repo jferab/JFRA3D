@@ -35,7 +35,8 @@ function render() {
       // console.log(Jugador2);
         Jugador2.rayoColision();
     }
-
+	
+//console.log(scene.children);
 
     //renderer.render(scene, camera);
     for (var i = 0; i < 5; i++) {
@@ -72,7 +73,7 @@ function render() {
     }
 
     var idJugador = 0;
-   var msg = idJugador + "," + posX + "," + posZ + "," + angulo + "|";
+   var msg = idJugador + "," + posX + "," + posZ + "," + angulo + "," + Color +"|";
 
     try {
         // Le envia la longaniza al socket
