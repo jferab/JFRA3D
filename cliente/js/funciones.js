@@ -187,7 +187,7 @@ function colorJugador(longitud2){
 				//if(scene.children[m].position.x==140&&scene.children[m].position.z==0){
 				if(longitud2[p].split(",")[1]>scene.children[m].position.x&&longitud2[p].split(",")[1]<=scene.children[m].position.x+20
 				&&longitud2[p].split(",")[2]>scene.children[m].position.z&&longitud2[p].split(",")[2]<=scene.children[m].position.z+20
-				&&idMio!=longitud2[p].split(",")[0]){
+				&&p!=0){//idMio!=longitud2[p].split(",")[0]
 					//console.log(scene.children[m].material.color.setHex(coloreando[1]));
 					//cont0++;
 					scene.children[m].material.color.setHex(longitud2[p].split(",")[4])
