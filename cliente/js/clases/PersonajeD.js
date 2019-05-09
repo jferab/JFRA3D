@@ -107,7 +107,7 @@ function personajeDavid() {
         intersectsRayoPersonaje = ray.intersectObjects(scene.children);
         if(intersectsRayoPersonaje.length != 0){
           if(intersectsRayoPersonaje[0].object.name =="base"){
-            intersectsRayoPersonaje[0].object.material.color.setHex(0x0000ff);
+            intersectsRayoPersonaje[0].object.material.color.setHex(Color);
           }
         }
         banRay = true;
