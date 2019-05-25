@@ -1,0 +1,111 @@
+Inicio
+Ronda 1
+La bala impacto en: 95 , 7
+Coordenadas botUno: 10 , 37
+Vida del botUno: 948.138782
+Coordenadas botBob: 57 , 88
+Vida del botBob: 947.470666
+Coordenadas botJacinto: 33 , 92
+Vida del botJacinto: 963.209315
+
+Ronda 2
+La bala impacto en: 65 , 78
+Coordenadas botUno: 22 , 26
+Vida del botUno: 873.614704
+Coordenadas botBob: 47 , 6
+Vida del botBob: 879.686567
+Coordenadas botJacinto: 98 , 29
+Vida del botJacinto: 880.285537
+
+Ronda 3
+La bala impacto en: 70 , 16
+Coordenadas botUno: 1 , 79
+Vida del botUno: 825.049173
+Coordenadas botBob: 49 , 36
+Vida del botBob: 766.686567
+Coordenadas botJacinto: 74 , 38
+Vida del botJacinto: 760.646217
+
+Ronda 4
+La bala impacto en: 28 , 8
+Coordenadas botUno: 67 , 23
+Vida del botUno: 724.834337
+Coordenadas botBob: 73 , 96
+Vida del botBob: 723.524819
+Coordenadas botJacinto: 45 , 43
+Vida del botJacinto: 657.556370
+
+Ronda 5
+La bala impacto en: 37 , 31
+Coordenadas botUno: 83 , 7
+Vida del botUno: 634.718824
+Coordenadas botBob: 62 , 55
+Vida del botBob: 616.180265
+Coordenadas botJacinto: 8 , 46
+Vida del botJacinto: 548.206025
+
+Ronda 6
+La bala impacto en: 5 , 91
+Coordenadas botUno: 44 , 71
+Vida del botUno: 536.548038
+Coordenadas botBob: 74 , 74
+Vida del botBob: 545.243617
+Coordenadas botJacinto: 23 , 96
+Vida del botJacinto: 424.887567
+
+Ronda 7
+La bala impacto en: 47 , 99
+Coordenadas botUno: 99 , 69
+Vida del botUno: 454.581363
+Coordenadas botBob: 8 , 50
+Vida del botBob: 465.869491
+Coordenadas botJacinto: 37 , 11
+Vida del botJacinto: 371.453926
+
+Ronda 8
+La bala impacto en: 9 , 33
+Coordenadas botUno: 8 , 86
+Vida del botUno: 365.590796
+Coordenadas botBob: 12 , 92
+Vida del botBob: 382.945713
+Coordenadas botJacinto: 89 , 41
+Vida del botJacinto: 309.852931
+
+Ronda 9
+La bala impacto en: 89 , 79
+Coordenadas botUno: 62 , 56
+Vida del botUno: 259.059091
+Coordenadas botBob: 1 , 32
+Vida del botBob: 340.710436
+Coordenadas botJacinto: 32 , 70
+Vida del botJacinto: 225.559083
+
+Ronda 10
+La bala impacto en: 73 , 51
+Coordenadas botUno: 41 , 59
+Vida del botUno: 150.043936
+Coordenadas botBob: 27 , 12
+Vida del botBob: 259.017981
+Coordenadas botJacinto: 19 , 19
+Vida del botJacinto: 146.328503
+
+Ronda 11
+La bala impacto en: 77 , 68
+Coordenadas botUno: 1 , 61
+Vida del botUno: 84.365624
+Coordenadas botBob: 87 , 62
+Vida del botBob: 128.679885
+Coordenadas botJacinto: 90 , 49
+Vida del botJacinto: 27.350232
+
+Ronda 12
+La bala impacto en: 16 , 42
+Coordenadas botUno: 40 , 68
+Vida del botUno: -22.250764
+Coordenadas botBob: 61 , 70
+Vida del botBob: 39.679885
+Coordenadas botJacinto: 42 , 13
+Vida del botJacinto: -75.701084
+
+El ganador es botBob, con una vida de: 39.679885
+Perdieron botUno y botJacinto
