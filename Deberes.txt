@@ -22,3 +22,9 @@ el usuario tendra 5 vidas, si es golpeado 5 veces pierde.
 * Implementar las animaciones de los bots enemigos
 * Implementar las animaciones del personaje
 * Implementar el escenario
+
+Elementos necesarios para subir al repo
+
+*Config
+*Content
+*Semana26.uproject
