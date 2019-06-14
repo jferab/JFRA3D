@@ -1,0 +1,24 @@
+Juego Semana 26
+
+Juego de bots en el escenario donde algunos seran los malos otros seguiran caminando
+el usuario debera eliminar a los bots enemigos y estos deberan eliminar al usuario
+el usuario golpeara a los enemigos los cuales seran eliminados al 3 golpe
+el usuario tendra 5 vidas, si es golpeado 5 veces pierde.
+
+--------------Jorge--------------------
+--UI--
+* Realizar la UI respectiva del juego
+* Realizar la UI de la vida de los enemigos
+* Realizar la UI de la vida del jugador
+
+--------------Raul---------------------
+--Mecanicas--
+* Implementar la IA de los bots neutrales
+* Implementar la IA de los bots enemigos
+* Implementar las condiciones de win/lose
+
+--------------David--------------------
+--Escenario/Animaciones--
+* Implementar las animaciones de los bots enemigos
+* Implementar las animaciones del personaje
+* Implementar el escenario
