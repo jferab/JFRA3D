@@ -1,0 +1,981 @@
+﻿Log file open, 06/17/19 22:11:28
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: Semana26
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 4.134617
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.22-CL-6574378
+LogInit: Engine Version: 4.22.2-6574378+++UE4+Release-4.22
+LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
+LogInit: Net CL: 5660361
+LogInit: OS: Windows 10 (Release 1803) (), CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, GPU: NVIDIA GeForce GTX 1070
+LogInit: Compiled (64-bit): May 20 2019 09:54:56
+LogInit: Compiled with Visual C++: 19.16.27025.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.22
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Epic Games/UE_4.22/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 30
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 28
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 25
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 2
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.06.17-20.11.30:628][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.06.17-20.11.30:628][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:629][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.06.17-20.11.30:629][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.06.17-20.11.30:630][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:630][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:706][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.06.17-20.11.30:706][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.06.17-20.11.30:707][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.06.17-20.11.30:717][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.17-20.11.30:717][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.06.17-20.11.30:750][  0]LogHAL: Display: Platform has ~ 32 GB [34310676480 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.06.17-20.11.30:753][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.06.17-20.11.30:754][  0]LogInit: Going up to parent DeviceProfile []
+[2019.06.17-20.11.30:754][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.06.17-20.11.30:754][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Scalability.ini]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.06.17-20.11.30:755][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.06.17-20.11.30:762][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.06.17-20.11.30:763][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.06.17-20.11.30:763][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/xampp/htdocs/JFRA3D/Semana26/Saved/Config/Windows/Engine.ini]
+[2019.06.17-20.11.30:771][  0]LogInit: Computer: DESKTOP-7VM3CET
+[2019.06.17-20.11.30:771][  0]LogInit: User: Ailita
+[2019.06.17-20.11.30:771][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.06.17-20.11.30:771][  0]LogInit: High frequency timer resolution =2.742187 MHz
+[2019.06.17-20.11.30:772][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
+[2019.06.17-20.11.30:772][  0]LogMemory: Platform Memory Stats for Windows
+[2019.06.17-20.11.30:772][  0]LogMemory: Process Physical Memory: 97.02 MB used, 97.02 MB peak
+[2019.06.17-20.11.30:772][  0]LogMemory: Process Virtual Memory: 92.79 MB used, 92.79 MB peak
+[2019.06.17-20.11.30:772][  0]LogMemory: Physical Memory: 9274.08 MB used,  23447.13 MB free, 32721.21 MB total
+[2019.06.17-20.11.30:772][  0]LogMemory: Virtual Memory: 4657.18 MB used,  134213072.00 MB free, 134217728.00 MB total
+[2019.06.17-20.11.33:102][  0]LogInit: Overriding language with editor language configuration option (en).
+[2019.06.17-20.11.33:102][  0]LogInit: Overriding locale with editor locale configuration option (en).
+[2019.06.17-20.11.33:739][  0]LogInit: Setting process to per monitor DPI aware
+[2019.06.17-20.11.34:256][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.06.17-20.11.34:256][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.06.17-20.11.35:184][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.06.17-20.11.35:184][  0]LogD3D11RHI: D3D11 adapters:
+[2019.06.17-20.11.35:266][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2019.06.17-20.11.35:266][  0]LogD3D11RHI:       8081/0/16360 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.06.17-20.11.35:268][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.06.17-20.11.35:268][  0]LogD3D11RHI:       0/0/16360 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.06.17-20.11.35:268][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.06.17-20.11.35:284][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.06.17-20.11.35:284][  0]LogD3D11RHI:     GPU DeviceId: 0x1be1 (for the marketing name, search the web for "GPU Device Id")
+[2019.06.17-20.11.35:284][  0]LogWindows: EnumDisplayDevices:
+[2019.06.17-20.11.35:284][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2019.06.17-20.11.35:284][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2019.06.17-20.11.35:285][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2019.06.17-20.11.35:285][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2019.06.17-20.11.35:285][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.06.17-20.11.35:285][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2019.06.17-20.11.35:285][  0]LogD3D11RHI:   Driver Version: 418.91 (internal:25.21.14.1891, unified:418.91)
+[2019.06.17-20.11.35:285][  0]LogD3D11RHI:      Driver Date: 2-6-2019
+[2019.06.17-20.11.35:285][  0]LogRHI: Texture pool is 5656 MB (70% of 8081 MB)
+[2019.06.17-20.11.35:334][  0]LogD3D11RHI: Async texture creation enabled
+[2019.06.17-20.11.35:472][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.06.17-20.11.35:478][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.06.17-20.11.35:478][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.06.17-20.11.35:508][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.06.17-20.11.36:830][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.06.17-20.11.36:873][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.06.17-20.11.36:893][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.06.17-20.11.36:917][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.06.17-20.11.36:952][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.06.17-20.11.36:986][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.06.17-20.11.37:012][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.06.17-20.11.37:039][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.06.17-20.11.37:058][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.06.17-20.11.37:161][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.06.17-20.11.37:175][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.06.17-20.11.37:283][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.06.17-20.11.37:283][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.06.17-20.11.37:318][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.06.17-20.11.37:318][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.06.17-20.11.37:342][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.06.17-20.11.37:363][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.06.17-20.11.37:381][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.06.17-20.11.37:437][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.06.17-20.11.37:505][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.06.17-20.11.37:505][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.06.17-20.11.37:505][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.06.17-20.11.37:638][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.06.17-20.11.38:195][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (C:/xampp/htdocs/JFRA3D/Semana26/Intermediate/Shaders/WorkingDirectory/39116/).
+[2019.06.17-20.11.38:195][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Ailita/AppData/Local/Temp/UnrealShaderWorkingDir/B7AA749D405340BAACA4B0B0E4510819/'.
+[2019.06.17-20.11.38:206][  0]LogXGEController: Cleaning working directory: C:/Users/Ailita/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.06.17-20.11.38:206][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.06.17-20.11.38:207][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.06.17-20.11.38:207][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.06.17-20.11.39:849][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.06.17-20.11.40:060][  0]LogDerivedDataCache: Loaded boot cache 0.21s 71MB C:/Users/Ailita/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.06.17-20.11.40:060][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ailita/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2019.06.17-20.11.40:060][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/xampp/htdocs/JFRA3D/Semana26/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.06.17-20.11.40:060][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.06.17-20.11.40:060][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/xampp/htdocs/JFRA3D/Semana26/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.06.17-20.11.40:060][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.06.17-20.11.40:088][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.06.17-20.11.40:088][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.06.17-20.11.40:088][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.06.17-20.11.40:100][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Ailita/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.06.17-20.11.40:100][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.06.17-20.11.40:100][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.06.17-20.11.40:172][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.06.17-20.11.40:222][  0]LogSlate: Using FreeType 2.6.0
+[2019.06.17-20.11.40:291][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.06.17-20.11.41:066][  0]LogAssetRegistry: FAssetRegistry took 0.0359 seconds to start up
+[2019.06.17-20.11.43:088][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.17-20.11.44:090][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.06.17-20.11.44:090][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.06.17-20.11.44:090][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.06.17-20.11.44:090][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.06.17-20.11.44:091][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.06.17-20.11.44:586][  0]LogNetVersion: Semana26 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 1675994040)
+[2019.06.17-20.11.48:116][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.061277 seconds
+[2019.06.17-20.11.48:128][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
+[2019.06.17-20.11.48:128][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
+[2019.06.17-20.11.48:128][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.06.17-20.11.57:999][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.06.17-20.11.58:026][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.06.17-20.11.58:537][  0]SourceControl: Source control is disabled
+[2019.06.17-20.11.58:546][  0]SourceControl: Source control is disabled
+[2019.06.17-20.11.58:636][  0]SourceControl: Source control is disabled
+[2019.06.17-20.11.58:652][  0]SourceControl: Source control is disabled
+[2019.06.17-20.11.59:518][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.06.17-20.11.59:931][  0]LogOcInput: OculusInput pre-init called
+[2019.06.17-20.12.01:511][  0]LogEngine: Initializing Engine...
+[2019.06.17-20.12.01:549][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.06.17-20.12.01:560][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2019.06.17-20.12.02:129][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.06.17-20.12.02:442][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.06.17-20.12.02:592][  0]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-20.12.02:648][  0]LogInit: FAudioDevice initialized.
+[2019.06.17-20.12.02:648][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.06.17-20.12.02:726][  0]LogDerivedDataCache: Saved boot cache 0.08s 71MB C:/Users/Ailita/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.06.17-20.12.02:733][  0]LogInit: Texture streaming: Enabled
+[2019.06.17-20.12.02:829][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.06.17-20.12.02:994][  0]LogInit: Transaction tracking system initialized
+[2019.06.17-20.12.03:269][  0]BlueprintLog: New page: Editor Load
+[2019.06.17-20.12.04:298][  0]LocalizationService: Localization service is disabled
+[2019.06.17-20.12.05:920][  0]LogFileCache: Scanning file cache for directory 'C:/xampp/htdocs/JFRA3D/Semana26/Content/' took 0.01s
+[2019.06.17-20.12.05:920][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.06.17-20.12.05:920][  0]LogCook: Display: Mobile HDR setting 1
+[2019.06.17-20.12.07:567][  0]SourceControl: Source control is disabled
+[2019.06.17-20.12.07:598][  0]Cmd: MAP LOAD FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.06.17-20.12.07:598][  0]LogEditorServer: Warning: Can't find file 'C:/xampp/htdocs/JFRA3D/Semana26/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2019.06.17-20.12.07:599][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.06.17-20.12.07:606][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 7.035ms to complete.
+[2019.06.17-20.12.07:606][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.025
+[2019.06.17-20.12.08:907][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.12.08:942][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.12.08:954][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.12.08:963][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.12.09:025][  0]LogCollectionManager: Loaded 0 collections in 0.001261 seconds
+[2019.06.17-20.12.09:152][  0]LogFileCache: Scanning file cache for directory 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Collections/' took 0.01s
+[2019.06.17-20.12.09:152][  0]LogFileCache: Scanning file cache for directory 'C:/xampp/htdocs/JFRA3D/Semana26/Content/Developers/Ailita/Collections/' took 0.01s
+[2019.06.17-20.12.09:152][  0]LogFileCache: Scanning file cache for directory 'C:/xampp/htdocs/JFRA3D/Semana26/Content/Collections/' took 0.01s
+[2019.06.17-20.12.09:152][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2019.06.17-20.12.09:170][  0]LogContentBrowser: Native class hierarchy populated in 0.0163 seconds. Added 2732 classes and 659 folders.
+[2019.06.17-20.12.09:235][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.06.17-20.12.09:284][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:313][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:317][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:322][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:326][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:329][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:331][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:334][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:336][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:338][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:340][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:342][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:344][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:345][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:347][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:349][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:350][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:352][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:353][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:355][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:357][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:358][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:360][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:362][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:364][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:365][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.06.17-20.12.09:656][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.06.17-20.12.09:726][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.06.17-20.12.09:901][  0]LogSlate: Took 0.027186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.06.17-20.12.09:920][  0]LogSlate: Took 0.017638 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.06.17-20.12.09:950][  0]LogSlate: Took 0.010088 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.06.17-20.12.10:327][  0]LogRenderer: Reallocating scene render targets to support 964x436 Format 10 NumSamples 1 (Frame:1).
+[2019.06.17-20.12.10:865][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.06.17-20.12.10:865][  0]LogLoad: (Engine Initialization) Total time: 52.89 seconds
+[2019.06.17-20.12.10:865][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.06.17-20.12.11:051][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.06.17-20.12.11:144][  0]LogSlate: Took 0.014369 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.06.17-20.12.11:187][  1]LogAssetRegistry: Asset discovery search completed in 30.1438 seconds
+[2019.06.17-20.12.11:202][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.06.17-20.12.11:202][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000066 seconds (updated 0 objects)
+[2019.06.17-20.15.59:623][684]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.17-20.16.23:012][622]LogSlate: Took 0.000366 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.06.17-20.16.45:844][376]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/JFRA_UI1.JFRA_UI1
+[2019.06.17-20.16.46:969][376]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 121 classes and 0 folders.
+[2019.06.17-20.16.48:292][376]LogBlueprintActionDatabase: Requesting refresh due to module change: SequencerWidgets (loaded)
+[2019.06.17-20.16.49:059][376]LogSlate: Took 0.032919 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.06.17-20.17.02:421][768]LogSlate: Window 'JFRA_UI1' being destroyed
+[2019.06.17-20.17.02:459][768]LogSlate: Window 'JFRA_UI1' being destroyed
+[2019.06.17-20.17.16:021][139]LogUObjectHash: Compacting FUObjectHashTables data took   5.57ms
+[2019.06.17-20.17.16:027][139]LogMetaData: Removing '/Game/JFRA_UI/HUD1.SKEL_HUD1_C' ref from Metadata '/Game/JFRA_UI/JFRA_UI1.PackageMetaData'
+[2019.06.17-20.17.16:027][139]LogMetaData: Removing '/Game/JFRA_UI/HUD1.HUD1_C' ref from Metadata '/Game/JFRA_UI/JFRA_UI1.PackageMetaData'
+[2019.06.17-20.17.16:027][139]LogMetaData: Removing '/Game/JFRA_UI/HUD1.HUD1:EventGraph.K2Node_Event_0' ref from Metadata '/Game/JFRA_UI/JFRA_UI1.PackageMetaData'
+[2019.06.17-20.17.16:027][139]LogMetaData: Removing '/Game/JFRA_UI/HUD1.HUD1:EventGraph.K2Node_Event_1' ref from Metadata '/Game/JFRA_UI/JFRA_UI1.PackageMetaData'
+[2019.06.17-20.17.16:027][139]LogMetaData: Removing '/Game/JFRA_UI/HUD1.HUD1:EventGraph.K2Node_Event_2' ref from Metadata '/Game/JFRA_UI/JFRA_UI1.PackageMetaData'
+[2019.06.17-20.17.16:062][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/HUD1" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/HUD1.uasset" SILENT=true
+[2019.06.17-20.17.16:096][139]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/HUD1D520A82C48E2154F116EFEB39E3B258C.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/HUD1.uasset'
+[2019.06.17-20.17.16:280][139]LogUObjectHash: Compacting FUObjectHashTables data took   3.19ms
+[2019.06.17-20.17.16:317][139]LogUObjectHash: Compacting FUObjectHashTables data took   2.88ms
+[2019.06.17-20.17.16:348][139]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2019.06.17-20.17.17:892][177]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/HUD1.HUD1
+[2019.06.17-20.19.50:601][395]LogSlate: Window 'HUD1' being destroyed
+[2019.06.17-20.19.50:640][395]LogSlate: Window 'HUD1' being destroyed
+[2019.06.17-20.21.41:307][ 27]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/HUD1.HUD1
+[2019.06.17-20.22.14:444][259]LogUObjectHash: Compacting FUObjectHashTables data took   6.57ms
+[2019.06.17-20.22.14:444][259]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_0' took 0.067
+[2019.06.17-20.22.14:447][259]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/JFRA_UI/HUD1] ([1] browsable assets)...
+[2019.06.17-20.22.14:447][259]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/HUD1]
+[2019.06.17-20.22.14:447][259]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/HUD1" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/HUD1_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-20.22.14:468][259]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/HUD1_Auto15855CBE243E9F30853741F8668F6A5AC.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/HUD1_Auto1.uasset'
+[2019.06.17-20.22.14:470][259]LogFileHelpers: Auto-saving content packages took 0.024
+[2019.06.17-20.35.40:399][812]LogUObjectHash: Compacting FUObjectHashTables data took  12.74ms
+[2019.06.17-20.35.40:399][812]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_0' took 0.163
+[2019.06.17-20.35.40:403][812]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/JFRA_UI/HUD1] ([1] browsable assets)...
+[2019.06.17-20.35.40:403][812]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/HUD1]
+[2019.06.17-20.35.40:403][812]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/HUD1" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/HUD1_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-20.35.40:447][812]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/HUD1_Auto250DD1CA74047D91E591673BD094FF135.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/HUD1_Auto2.uasset'
+[2019.06.17-20.35.40:453][812]LogFileHelpers: Auto-saving content packages took 0.052
+[2019.06.17-20.38.02:171][391]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Ailita\Downloads\emoji-triste-amarelo-emoji-by-Vexels.png)
+[2019.06.17-20.38.02:274][391]LogTexture: Display: Building textures: emoji-triste-amarelo-emoji-by-Vexels (AutoDXT, 1024X1024)
+[2019.06.17-20.38.15:096][708]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/imgTriste" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/imgTriste.uasset" SILENT=true
+[2019.06.17-20.38.15:505][708]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/imgTristeCFA3FFF1438F209E96BF6A9B87DC306D.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/imgTriste.uasset'
+[2019.06.17-20.38.15:867][708]LogUObjectHash: Compacting FUObjectHashTables data took   6.19ms
+[2019.06.17-20.38.15:955][708]LogUObjectHash: Compacting FUObjectHashTables data took   5.49ms
+[2019.06.17-20.38.16:036][708]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2019.06.17-20.43.05:034][323]LogSlate: Window 'Save Asset As' being destroyed
+[2019.06.17-20.45.59:844][ 98]LogUObjectHash: Compacting FUObjectHashTables data took  13.95ms
+[2019.06.17-20.45.59:845][ 98]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_0' took 0.135
+[2019.06.17-20.45.59:848][ 98]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/JFRA_UI/HUD1] ([1] browsable assets)...
+[2019.06.17-20.45.59:849][ 98]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/HUD1]
+[2019.06.17-20.45.59:849][ 98]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/HUD1" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/HUD1_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-20.45.59:893][ 98]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/HUD1_Auto33B320BF44D0E382CEE25BFB614307894.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/HUD1_Auto3.uasset'
+[2019.06.17-20.45.59:901][ 98]LogFileHelpers: Auto-saving content packages took 0.054
+[2019.06.17-20.47.38:836][518]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/HUD1" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/HUD1.uasset" SILENT=true
+[2019.06.17-20.47.38:864][518]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/HUD198B623F142F90D41ABF584B14C455B68.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/HUD1.uasset'
+[2019.06.17-20.47.39:603][541]BlueprintLog: New page: Compile HUD1
+[2019.06.17-20.47.39:686][541]LogUObjectHash: Compacting FUObjectHashTables data took   5.64ms
+[2019.06.17-20.47.42:833][633]LogSlate: Window 'HUD1' being destroyed
+[2019.06.17-20.47.42:883][633]LogSlate: Window 'HUD1' being destroyed
+[2019.06.17-20.47.47:642][693]LogSlate: Window 'Save Level As' being destroyed
+[2019.06.17-20.48.00:653][763]LogSlate: Window 'Save Level As' being destroyed
+[2019.06.17-20.48.03:923][819]LogSkeletalMesh: Building Skeletal Mesh SK_Mannequin...
+[2019.06.17-20.48.04:057][819]LogSkeletalMesh: Built Skeletal Mesh [0.13s] /Game/Mannequin/Character/Mesh/SK_Mannequin.SK_Mannequin
+[2019.06.17-20.48.25:326][904]LogEditorViewport: Clicking Background
+[2019.06.17-20.48.43:342][286]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.17-20.51.00:938][ 30]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_0.Untitled:PersistentLevel.Untitled
+[2019.06.17-20.51.24:410][389]LogSlate: Took 0.012249 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.06.17-20.51.43:339][421]BlueprintLog: New page: Compile Untitled
+[2019.06.17-20.51.43:379][421]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
+[2019.06.17-20.51.51:559][306]LogTemp: Repeating last play command: Selected Viewport
+[2019.06.17-20.51.51:565][306]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.51.51:849][306]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.06.17-20.51.51:880][306]PIE: New page: PIE session: Untitled_0 (Jun 18, 2019, 12:51:51 AM)
+[2019.06.17-20.51.51:918][306]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2019.06.17-20.51.51:924][306]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003621s)
+[2019.06.17-20.51.51:925][306]LogAIModule: Creating AISystem for world Untitled
+[2019.06.17-20.51.51:926][306]LogPlayLevel: PIE: World Init took: (0.001895s)
+[2019.06.17-20.51.51:926][306]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.Untitled to /Temp/UEDPIE_0_Untitled_0.Untitled (0.007653s)
+[2019.06.17-20.51.51:962][306]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2019.06.17-20.51.52:015][306]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-20.51.52:032][306]LogInit: FAudioDevice initialized.
+[2019.06.17-20.51.52:095][306]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2019.06.17-20.51.52:096][306]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.Untitled up for play (max tick rate 0) at 2019.06.17-22.51.52
+[2019.06.17-20.51.52:096][306]LogWorld: Bringing up level for play took: 0.000570
+[2019.06.17-20.51.52:202][306]LogBlueprintActionDatabase: Requesting refresh due to module change: Voice (loaded)
+[2019.06.17-20.51.52:226][306]LogBlueprintActionDatabase: Requesting refresh due to module change: MovieSceneCapture (loaded)
+[2019.06.17-20.51.52:227][306]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2019.06.17-20.51.52:311][306]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_0 1.689
+[2019.06.17-20.51.52:311][306]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.52.07:776][ 85]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.52.07:776][ 85]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.52.08:097][ 85]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.06.17-20.52.08:098][ 85]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.52.08:141][ 85]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.52.08:172][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   5.49ms
+[2019.06.17-20.52.08:194][ 86]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2019.06.17-20.52.21:136][232]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.17-20.52.21:233][242]LogTemp: Repeating last play command: Selected Viewport
+[2019.06.17-20.52.21:242][242]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.52.21:242][242]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.06.17-20.52.21:242][242]PIE: New page: PIE session: Untitled_0 (Jun 18, 2019, 12:52:21 AM)
+[2019.06.17-20.52.21:242][242]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2019.06.17-20.52.21:244][242]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000954s)
+[2019.06.17-20.52.21:244][242]LogAIModule: Creating AISystem for world Untitled
+[2019.06.17-20.52.21:244][242]LogPlayLevel: PIE: World Init took: (0.000505s)
+[2019.06.17-20.52.21:244][242]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.Untitled to /Temp/UEDPIE_0_Untitled_0.Untitled (0.001982s)
+[2019.06.17-20.52.21:289][242]LogUObjectHash: Compacting FUObjectHashTables data took   3.14ms
+[2019.06.17-20.52.21:339][242]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-20.52.21:355][242]LogInit: FAudioDevice initialized.
+[2019.06.17-20.52.21:675][242]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2019.06.17-20.52.21:676][242]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.Untitled up for play (max tick rate 0) at 2019.06.17-22.52.21
+[2019.06.17-20.52.21:676][242]LogWorld: Bringing up level for play took: 0.000313
+[2019.06.17-20.52.21:690][242]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_0 1.068
+[2019.06.17-20.52.21:690][242]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.53.34:486][969]LogUObjectHash: Compacting FUObjectHashTables data took   3.38ms
+[2019.06.17-20.53.34:672][969]LogUObjectHash: Compacting FUObjectHashTables data took   4.03ms
+[2019.06.17-20.53.34:674][969]LogMetaData: Removing '/Game/JFRA_UI/hudPerder.hudPerder_C' ref from Metadata '/Game/JFRA_UI/HUD1.PackageMetaData'
+[2019.06.17-20.53.34:674][969]LogMetaData: Removing '/Game/JFRA_UI/hudPerder.SKEL_hudPerder_C' ref from Metadata '/Game/JFRA_UI/HUD1.PackageMetaData'
+[2019.06.17-20.53.34:674][969]LogMetaData: Removing '/Game/JFRA_UI/hudPerder.hudPerder:EventGraph.K2Node_Event_0' ref from Metadata '/Game/JFRA_UI/HUD1.PackageMetaData'
+[2019.06.17-20.53.34:674][969]LogMetaData: Removing '/Game/JFRA_UI/hudPerder.hudPerder:EventGraph.K2Node_Event_1' ref from Metadata '/Game/JFRA_UI/HUD1.PackageMetaData'
+[2019.06.17-20.53.34:674][969]LogMetaData: Removing '/Game/JFRA_UI/hudPerder.hudPerder:EventGraph.K2Node_Event_2' ref from Metadata '/Game/JFRA_UI/HUD1.PackageMetaData'
+[2019.06.17-20.53.34:680][969]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudPerder" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudPerder.uasset" SILENT=true
+[2019.06.17-20.53.34:690][969]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudPerderDD593A464D79211E79CC4FB5CCD763FA.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudPerder.uasset'
+[2019.06.17-20.53.34:719][969]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via None]:
+[2019.06.17-20.53.34:719][969]LogGarbage: Warning:       PIE object: SignificanceManager /Temp/UEDPIE_0_Untitled_0.Untitled:SignificanceManager_0
+[2019.06.17-20.53.34:719][969]LogGarbage: Warning:   NON-PIE object: GCObjectReferencer /Engine/Transient.GCObjectReferencer_0
+[2019.06.17-20.53.34:739][969]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via ObjectProperty /Script/UnrealEd.EditorEngine:PlayWorld]:
+[2019.06.17-20.53.34:739][969]LogGarbage: Warning:       PIE object: World /Temp/UEDPIE_0_Untitled_0.Untitled
+[2019.06.17-20.53.34:739][969]LogGarbage: Warning:   NON-PIE object: UnrealEdEngine /Engine/Transient.UnrealEdEngine_0
+[2019.06.17-20.53.34:807][969]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via None]:
+[2019.06.17-20.53.34:807][969]LogGarbage: Warning:       PIE object: SignificanceManager /Temp/UEDPIE_0_Untitled_0.Untitled:SignificanceManager_0
+[2019.06.17-20.53.34:807][969]LogGarbage: Warning:   NON-PIE object: GCObjectReferencer /Engine/Transient.GCObjectReferencer_0
+[2019.06.17-20.53.34:828][969]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via ObjectProperty /Script/UnrealEd.EditorEngine:PlayWorld]:
+[2019.06.17-20.53.34:828][969]LogGarbage: Warning:       PIE object: World /Temp/UEDPIE_0_Untitled_0.Untitled
+[2019.06.17-20.53.34:828][969]LogGarbage: Warning:   NON-PIE object: UnrealEdEngine /Engine/Transient.UnrealEdEngine_0
+[2019.06.17-20.53.35:215][969]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2019.06.17-20.53.35:251][969]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2019.06.17-20.53.35:286][969]LogUObjectHash: Compacting FUObjectHashTables data took   0.78ms
+[2019.06.17-20.53.40:070][538]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudGanar" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudGanar.uasset" SILENT=true
+[2019.06.17-20.53.40:081][538]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudGanar92E1BDF54DB37CAAF74AFE8600C4B459.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudGanar.uasset'
+[2019.06.17-20.53.43:542][950]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudPerder" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudPerder.uasset" SILENT=true
+[2019.06.17-20.53.43:555][950]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudPerderEFEDCF704354ED177E2B7DA150539F98.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudPerder.uasset'
+[2019.06.17-20.54.03:490][420]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudGanar.hudGanar
+[2019.06.17-20.54.06:195][672]LogSlate: Window 'hudGanar' being destroyed
+[2019.06.17-20.54.06:201][672]LogSlate: Window 'hudGanar' being destroyed
+[2019.06.17-20.54.26:703][488]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudPerder.hudPerder
+[2019.06.17-20.54.27:757][558]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudGanar.hudGanar
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder_C:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_11:hudPerder_C_0.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/JFRA_UI/hudGanar.hudGanar:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDVariantSampleUI.VREDVariantSampleUI_C:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDAnimationSampleUI.VREDAnimationSampleUI:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDAnimationSampleUI.VREDAnimationSampleUI_C:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDVariantSampleUI.VREDVariantSampleUI:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_11:hudPerder_C_1.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_13:hudGanar_C_0.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_13:hudGanar_C_1.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogProperty: Warning: Illegal TEXT reference to a private object in external package (CanvasPanelSlot /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0.CanvasPanelSlot_2) from referencer (Image /Engine/UMG/Editor/Transient.Image_17).  Import failed...
+[2019.06.17-20.54.45:864][497]LogProperty: Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'CanvasPanelSlot'"CanvasPanel_0.CanvasPanelSlot_2"''
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder_C:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_11:hudPerder_C_0.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/JFRA_UI/hudGanar.hudGanar:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDVariantSampleUI.VREDVariantSampleUI_C:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDAnimationSampleUI.VREDAnimationSampleUI:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDAnimationSampleUI.VREDAnimationSampleUI_C:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /DatasmithContent/Blueprints/FBXImporter/UI/VREDVariantSampleUI.VREDVariantSampleUI:WidgetTree.CanvasPanel_0
+[2019.06.17-20.54.45:864][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_11:hudPerder_C_1.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:866][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_13:hudGanar_C_0.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:866][497]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_13:hudGanar_C_1.WidgetTree_0.CanvasPanel_0
+[2019.06.17-20.54.45:866][497]LogProperty: Warning: Illegal TEXT reference to a private object in external package (CanvasPanelSlot /Game/JFRA_UI/hudPerder.hudPerder:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4) from referencer (TextBlock /Engine/UMG/Editor/Transient.txtPerder).  Import failed...
+[2019.06.17-20.54.45:866][497]LogProperty: Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'CanvasPanelSlot'"CanvasPanel_0.CanvasPanelSlot_4"''
+[2019.06.17-20.55.34:999][928]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Ailita\Downloads\Smile.png)
+[2019.06.17-20.55.35:039][928]LogTexture: Display: Building textures: Smile (AutoDXT, 1024X1024)
+[2019.06.17-20.55.39:087][371]LogAssetEditorManager: Opening Asset editor for Texture2D /Game/JFRA_UI/Smile.Smile
+[2019.06.17-20.55.39:437][371]LogBlueprintActionDatabase: Requesting refresh due to module change: TextureEditor (loaded)
+[2019.06.17-20.55.39:437][371]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.06.17-20.56.28:236][ 95]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-20.57.01:866][510]LogActor: Warning: bp_Player_C_0 is outside the world bounds!
+[2019.06.17-20.57.15:072][923]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudGanar" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudGanar.uasset" SILENT=true
+[2019.06.17-20.57.15:084][923]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudGanar2F7BE6B240117A330B53B0A5557ECC42.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudGanar.uasset'
+[2019.06.17-20.57.16:514][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudGanar" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudGanar.uasset" SILENT=true
+[2019.06.17-20.57.16:526][ 69]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudGanar2335E67F4936A564CA41B293008C185A.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudGanar.uasset'
+[2019.06.17-20.57.18:660][281]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.57.18:660][281]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.57.18:697][281]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.06.17-20.57.18:698][281]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.57.18:746][281]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-20.57.18:757][281]LogUObjectHash: Compacting FUObjectHashTables data took   6.39ms
+[2019.06.17-20.57.18:768][282]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2019.06.17-20.57.33:225][585]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudPerder" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudPerder.uasset" SILENT=true
+[2019.06.17-20.57.33:235][585]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudPerder104B44DD49B412519A0C0091B86A1FC1.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudPerder.uasset'
+[2019.06.17-20.57.35:749][874]LogSlate: Window 'hudGanar' being destroyed
+[2019.06.17-20.57.35:754][874]LogSlate: Window 'hudGanar' being destroyed
+[2019.06.17-20.57.42:764][684]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_0.Untitled:PersistentLevel.Untitled
+[2019.06.17-20.57.45:768][968]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2019.06.17-20.57.50:202][427]BlueprintLog: New page: Compile Untitled
+[2019.06.17-20.57.50:407][427]LogUObjectHash: Compacting FUObjectHashTables data took   4.63ms
+[2019.06.17-20.57.54:300][870]LogTemp: Repeating last play command: Selected Viewport
+[2019.06.17-20.57.54:310][870]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.57.54:310][870]BlueprintLog: New page: Pre-Play auto-recompile
+[2019.06.17-20.57.54:310][870]LogPlayLevel: [PlayLevel] Compiling hudPerder before play...
+[2019.06.17-20.57.54:314][870]LogPlayLevel: [PlayLevel] Compiling hudGanar before play...
+[2019.06.17-20.57.54:510][870]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2019.06.17-20.57.54:510][870]LogPlayLevel: PlayLevel: Blueprint regeneration took 200 ms (2 blueprints)
+[2019.06.17-20.57.54:510][870]PIE: New page: PIE session: Untitled_0 (Jun 18, 2019, 12:57:54 AM)
+[2019.06.17-20.57.54:510][870]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2019.06.17-20.57.54:511][870]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000826s)
+[2019.06.17-20.57.54:511][870]LogAIModule: Creating AISystem for world Untitled
+[2019.06.17-20.57.54:512][870]LogPlayLevel: PIE: World Init took: (0.000494s)
+[2019.06.17-20.57.54:512][870]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.Untitled to /Temp/UEDPIE_0_Untitled_0.Untitled (0.001432s)
+[2019.06.17-20.57.54:544][870]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2019.06.17-20.57.54:587][870]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-20.57.54:604][870]LogInit: FAudioDevice initialized.
+[2019.06.17-20.57.54:634][870]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2019.06.17-20.57.54:635][870]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.Untitled up for play (max tick rate 0) at 2019.06.17-22.57.54
+[2019.06.17-20.57.54:635][870]LogWorld: Bringing up level for play took: 0.000305
+[2019.06.17-20.57.54:649][870]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_0 0.027
+[2019.06.17-20.57.54:649][870]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-20.57.54:812][889]LogActor: Warning: bp_Player_C_0 is outside the world bounds!
+[2019.06.17-21.05.32:244][485]LogUObjectHash: Compacting FUObjectHashTables data took   3.81ms
+[2019.06.17-21.05.32:244][485]LogMetaData: Removing '/Game/JFRA_UI/hudMeni.SKEL_hudMeni_C' ref from Metadata '/Game/JFRA_UI/hudEmpezar.PackageMetaData'
+[2019.06.17-21.05.32:244][485]LogMetaData: Removing '/Game/JFRA_UI/hudMeni.hudMeni_C' ref from Metadata '/Game/JFRA_UI/hudEmpezar.PackageMetaData'
+[2019.06.17-21.05.32:244][485]LogMetaData: Removing '/Game/JFRA_UI/hudMeni.hudMeni:EventGraph.K2Node_Event_0' ref from Metadata '/Game/JFRA_UI/hudEmpezar.PackageMetaData'
+[2019.06.17-21.05.32:244][485]LogMetaData: Removing '/Game/JFRA_UI/hudMeni.hudMeni:EventGraph.K2Node_Event_1' ref from Metadata '/Game/JFRA_UI/hudEmpezar.PackageMetaData'
+[2019.06.17-21.05.32:244][485]LogMetaData: Removing '/Game/JFRA_UI/hudMeni.hudMeni:EventGraph.K2Node_Event_2' ref from Metadata '/Game/JFRA_UI/hudEmpezar.PackageMetaData'
+[2019.06.17-21.05.32:248][485]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudMeni" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMeni.uasset" SILENT=true
+[2019.06.17-21.05.32:256][485]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudMeni2A26BC8C467D48D6FB8BECB2B3C99E48.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMeni.uasset'
+[2019.06.17-21.05.32:285][485]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via None]:
+[2019.06.17-21.05.32:285][485]LogGarbage: Warning:       PIE object: SignificanceManager /Temp/UEDPIE_0_Untitled_0.Untitled:SignificanceManager_0
+[2019.06.17-21.05.32:285][485]LogGarbage: Warning:   NON-PIE object: GCObjectReferencer /Engine/Transient.GCObjectReferencer_0
+[2019.06.17-21.05.32:304][485]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via ObjectProperty /Script/UnrealEd.EditorEngine:PlayWorld]:
+[2019.06.17-21.05.32:304][485]LogGarbage: Warning:       PIE object: World /Temp/UEDPIE_0_Untitled_0.Untitled
+[2019.06.17-21.05.32:304][485]LogGarbage: Warning:   NON-PIE object: UnrealEdEngine /Engine/Transient.UnrealEdEngine_0
+[2019.06.17-21.05.32:382][485]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2019.06.17-21.05.32:417][485]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2019.06.17-21.05.32:452][485]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2019.06.17-21.05.38:037][145]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2019.06.17-21.05.38:037][145]LogMetaData: Removing '/Game/JFRA_UI/hudMenu.hudMenu_C' ref from Metadata '/Game/JFRA_UI/hudMeni.PackageMetaData'
+[2019.06.17-21.05.38:037][145]LogMetaData: Removing '/Game/JFRA_UI/hudMenu.SKEL_hudMenu_C' ref from Metadata '/Game/JFRA_UI/hudMeni.PackageMetaData'
+[2019.06.17-21.05.38:037][145]LogMetaData: Removing '/Game/JFRA_UI/hudMenu.hudMenu:EventGraph.K2Node_Event_0' ref from Metadata '/Game/JFRA_UI/hudMeni.PackageMetaData'
+[2019.06.17-21.05.38:037][145]LogMetaData: Removing '/Game/JFRA_UI/hudMenu.hudMenu:EventGraph.K2Node_Event_1' ref from Metadata '/Game/JFRA_UI/hudMeni.PackageMetaData'
+[2019.06.17-21.05.38:037][145]LogMetaData: Removing '/Game/JFRA_UI/hudMenu.hudMenu:EventGraph.K2Node_Event_2' ref from Metadata '/Game/JFRA_UI/hudMeni.PackageMetaData'
+[2019.06.17-21.05.38:042][145]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudMenu" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMenu.uasset" SILENT=true
+[2019.06.17-21.05.38:049][145]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudMenu40F43EF141B6C12FB44FF0A3D5933722.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMenu.uasset'
+[2019.06.17-21.05.38:078][145]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via None]:
+[2019.06.17-21.05.38:078][145]LogGarbage: Warning:       PIE object: SignificanceManager /Temp/UEDPIE_0_Untitled_0.Untitled:SignificanceManager_0
+[2019.06.17-21.05.38:078][145]LogGarbage: Warning:   NON-PIE object: GCObjectReferencer /Engine/Transient.GCObjectReferencer_0
+[2019.06.17-21.05.38:097][145]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via ObjectProperty /Script/UnrealEd.EditorEngine:PlayWorld]:
+[2019.06.17-21.05.38:097][145]LogGarbage: Warning:       PIE object: World /Temp/UEDPIE_0_Untitled_0.Untitled
+[2019.06.17-21.05.38:098][145]LogGarbage: Warning:   NON-PIE object: UnrealEdEngine /Engine/Transient.UnrealEdEngine_0
+[2019.06.17-21.05.38:170][145]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2019.06.17-21.05.38:205][145]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2019.06.17-21.05.38:232][145]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2019.06.17-21.05.46:779][164]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudMenu.hudMenu
+[2019.06.17-21.10.16:686][366]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Ailita\Downloads\pulsa-el-boton-de-empezar.png)
+[2019.06.17-21.10.16:690][366]LogTexture: Display: Building textures: pulsa-el-boton-de-empezar (AutoDXT, 512X512)
+[2019.06.17-21.10.25:145][910]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/imgInicio" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/imgInicio.uasset" SILENT=true
+[2019.06.17-21.10.25:155][910]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/imgInicio0D45C96743635699D624E0B1C7C279F7.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/imgInicio.uasset'
+[2019.06.17-21.10.25:181][910]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via None]:
+[2019.06.17-21.10.25:181][910]LogGarbage: Warning:       PIE object: SignificanceManager /Temp/UEDPIE_0_Untitled_0.Untitled:SignificanceManager_0
+[2019.06.17-21.10.25:181][910]LogGarbage: Warning:   NON-PIE object: GCObjectReferencer /Engine/Transient.GCObjectReferencer_0
+[2019.06.17-21.10.25:202][910]LogGarbage: Warning: GC detected illegal reference to PIE object from content [possibly via ObjectProperty /Script/UnrealEd.EditorEngine:PlayWorld]:
+[2019.06.17-21.10.25:202][910]LogGarbage: Warning:       PIE object: World /Temp/UEDPIE_0_Untitled_0.Untitled
+[2019.06.17-21.10.25:202][910]LogGarbage: Warning:   NON-PIE object: UnrealEdEngine /Engine/Transient.UnrealEdEngine_0
+[2019.06.17-21.10.25:278][910]LogUObjectHash: Compacting FUObjectHashTables data took   4.32ms
+[2019.06.17-21.10.25:310][910]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
+[2019.06.17-21.10.25:345][910]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2019.06.17-21.11.50:730][492]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-21.12.25:896][538]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-21.13.33:253][701]LogAssetEditorManager: Opening Asset editor for Texture2D /Game/JFRA_UI/imgInicio.imgInicio
+[2019.06.17-21.13.42:105][225]LogTexture: Display: Building textures: imgInicio (AutoDXT, 512X512)
+[2019.06.17-21.13.45:682][439]LogTexture: Display: Building textures: imgInicio (AutoDXT, 512X512)
+[2019.06.17-21.13.55:808][ 46]LogTexture: Display: Building textures: imgInicio (AutoDXT, 512X512)
+[2019.06.17-21.15.24:743][625]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.06.17-21.15.35:088][240]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.15.45:151][536]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Ailita\Downloads\inicioblanco.png)
+[2019.06.17-21.15.45:155][536]LogTexture: Display: Building textures: inicioblanco (AutoDXT, 512X512)
+[2019.06.17-21.15.48:684][557]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudMenu.hudMenu
+[2019.06.17-21.16.25:595][743]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-21.17.01:527][892]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-21.17.38:792][123]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-21.17.56:242][159]LogSlate: Window 'Color Picker' being destroyed
+[2019.06.17-21.18.05:592][718]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudMenu" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMenu.uasset" SILENT=true
+[2019.06.17-21.18.05:603][718]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudMenuA77A04F74626FD9E85F391B4361176B8.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMenu.uasset'
+[2019.06.17-21.18.27:823][895]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.18.27:828][895]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.18.31:232][ 96]LogAssetEditorManager: Opening Asset editor for LevelScriptBlueprint /Temp/Untitled_0.Untitled:PersistentLevel.Untitled
+[2019.06.17-21.18.40:174][616]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.18.40:174][616]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.18.40:202][616]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.06.17-21.18.40:203][616]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.18.40:244][616]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.18.40:251][616]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
+[2019.06.17-21.18.40:274][617]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2019.06.17-21.18.41:361][681]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2019.06.17-21.18.45:046][900]BlueprintLog: New page: Compile Untitled
+[2019.06.17-21.18.45:215][900]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2019.06.17-21.18.48:034][ 68]LogSlate: Window 'Untitled' being destroyed
+[2019.06.17-21.18.48:040][ 68]LogSlate: Window 'Untitled' being destroyed
+[2019.06.17-21.18.50:076][189]LogTemp: Repeating last play command: Selected Viewport
+[2019.06.17-21.18.50:083][189]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.18.50:083][189]BlueprintLog: New page: Pre-Play auto-recompile
+[2019.06.17-21.18.50:084][189]LogPlayLevel: [PlayLevel] Compiling hudMenu before play...
+[2019.06.17-21.18.50:232][189]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2019.06.17-21.18.50:232][189]LogPlayLevel: PlayLevel: Blueprint regeneration took 149 ms (1 blueprints)
+[2019.06.17-21.18.50:232][189]PIE: New page: PIE session: Untitled_0 (Jun 18, 2019, 1:18:50 AM)
+[2019.06.17-21.18.50:232][189]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2019.06.17-21.18.50:233][189]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000947s)
+[2019.06.17-21.18.50:234][189]LogAIModule: Creating AISystem for world Untitled
+[2019.06.17-21.18.50:234][189]LogPlayLevel: PIE: World Init took: (0.000566s)
+[2019.06.17-21.18.50:234][189]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.Untitled to /Temp/UEDPIE_0_Untitled_0.Untitled (0.001602s)
+[2019.06.17-21.18.50:266][189]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2019.06.17-21.18.50:308][189]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-21.18.50:326][189]LogInit: FAudioDevice initialized.
+[2019.06.17-21.18.50:357][189]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2019.06.17-21.18.50:358][189]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.Untitled up for play (max tick rate 60) at 2019.06.17-23.18.50
+[2019.06.17-21.18.50:358][189]LogWorld: Bringing up level for play took: 0.000272
+[2019.06.17-21.18.50:372][189]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_0 -0.249
+[2019.06.17-21.18.50:372][189]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.18.50:649][206]LogActor: Warning: bp_Player_C_0 is outside the world bounds!
+[2019.06.17-21.19.14:703][ 40]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudMenu.hudMenu
+[2019.06.17-21.19.53:835][145]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.19.53:840][145]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.19.55:038][215]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.19.55:038][215]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.19.55:070][215]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.06.17-21.19.55:071][215]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.19.55:106][215]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.19.55:113][215]LogUObjectHash: Compacting FUObjectHashTables data took   3.30ms
+[2019.06.17-21.19.55:138][217]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2019.06.17-21.19.56:205][281]LogTemp: Repeating last play command: Selected Viewport
+[2019.06.17-21.19.56:212][281]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.19.56:212][281]BlueprintLog: New page: Pre-Play auto-recompile
+[2019.06.17-21.19.56:214][281]LogPlayLevel: [PlayLevel] Compiling hudMenu before play...
+[2019.06.17-21.19.56:244][281]LogUObjectHash: Compacting FUObjectHashTables data took   3.17ms
+[2019.06.17-21.19.56:244][281]LogPlayLevel: PlayLevel: Blueprint regeneration took 32 ms (1 blueprints)
+[2019.06.17-21.19.56:244][281]PIE: New page: PIE session: Untitled_0 (Jun 18, 2019, 1:19:56 AM)
+[2019.06.17-21.19.56:244][281]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2019.06.17-21.19.56:245][281]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001029s)
+[2019.06.17-21.19.56:246][281]LogAIModule: Creating AISystem for world Untitled
+[2019.06.17-21.19.56:246][281]LogPlayLevel: PIE: World Init took: (0.000719s)
+[2019.06.17-21.19.56:246][281]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.Untitled to /Temp/UEDPIE_0_Untitled_0.Untitled (0.001852s)
+[2019.06.17-21.19.56:275][281]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2019.06.17-21.19.56:324][281]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-21.19.56:342][281]LogInit: FAudioDevice initialized.
+[2019.06.17-21.19.56:373][281]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2019.06.17-21.19.56:374][281]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.Untitled up for play (max tick rate 60) at 2019.06.17-23.19.56
+[2019.06.17-21.19.56:374][281]LogWorld: Bringing up level for play took: 0.000284
+[2019.06.17-21.19.56:388][281]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_0 -0.234
+[2019.06.17-21.19.56:388][281]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.19.56:768][304]LogActor: Warning: bp_Player_C_0 is outside the world bounds!
+[2019.06.17-21.20.03:052][681]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.20.03:052][681]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.20.03:082][681]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.06.17-21.20.03:082][681]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Temp/Untitled_0.Untitled:PersistentLevel' has LevelScriptBlueprint '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled' with GeneratedClass '/Temp/Untitled_0.Untitled_C' with ClassGeneratedBy '/Temp/Untitled_0.Untitled:PersistentLevel.Untitled'
+[2019.06.17-21.20.03:116][681]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.06.17-21.20.03:119][681]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2019.06.17-21.20.03:165][684]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2019.06.17-21.20.41:882][977]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.06.17-21.20.43:685][ 74]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/JFRA_UI/hudMenu.hudMenu
+[2019.06.17-21.23.08:839][730]LogUObjectHash: Compacting FUObjectHashTables data took   3.38ms
+[2019.06.17-21.23.08:840][730]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_0" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Temp/Untitled_0_Auto4.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2019.06.17-21.23.08:995][730]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Untitled_0_Auto4B82B1E8E4A9AF66C1D437BBFD7AE8A22.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Temp/Untitled_0_Auto4.umap'
+[2019.06.17-21.23.08:999][730]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_0' took 0.196
+[2019.06.17-21.23.08:999][730]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.196
+[2019.06.17-21.23.09:000][730]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/JFRA_UI/Smile] ([1] browsable assets)...
+[2019.06.17-21.23.09:008][730]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/JFRA_UI/Smile.Smile]
+[2019.06.17-21.23.09:009][730]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/Smile]
+[2019.06.17-21.23.09:009][730]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/Smile" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/Smile_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-21.23.09:020][730]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Smile_Auto4070CCF9B4E5D1DBE776E85AEB27D7DA8.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/Smile_Auto4.uasset'
+[2019.06.17-21.23.09:022][730]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/JFRA_UI/inicioblanco] ([1] browsable assets)...
+[2019.06.17-21.23.09:029][730]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/JFRA_UI/inicioblanco.inicioblanco]
+[2019.06.17-21.23.09:029][730]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/inicioblanco]
+[2019.06.17-21.23.09:029][730]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/inicioblanco" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/inicioblanco_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-21.23.09:036][730]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/inicioblanco_Auto4B34E571D42BEA041CEAB94903F4DD2B0.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/inicioblanco_Auto4.uasset'
+[2019.06.17-21.23.09:038][730]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/JFRA_UI/hudMenu] ([1] browsable assets)...
+[2019.06.17-21.23.09:038][730]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/hudMenu]
+[2019.06.17-21.23.09:038][730]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudMenu" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/hudMenu_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-21.23.09:050][730]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudMenu_Auto455C99AD04392A8C36795869034312F15.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/hudMenu_Auto4.uasset'
+[2019.06.17-21.23.09:052][730]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/JFRA_UI/imgInicio] ([1] browsable assets)...
+[2019.06.17-21.23.09:056][730]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/JFRA_UI/imgInicio.imgInicio]
+[2019.06.17-21.23.09:056][730]OBJ SavePackage: Finished generating thumbnails for package [/Game/JFRA_UI/imgInicio]
+[2019.06.17-21.23.09:056][730]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/imgInicio" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/imgInicio_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2019.06.17-21.23.09:065][730]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/imgInicio_Auto445E6A78945A8EAC5A8854A93830DAF24.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Autosaves/Game/JFRA_UI/imgInicio_Auto4.uasset'
+[2019.06.17-21.23.09:067][730]LogFileHelpers: Auto-saving content packages took 0.067
+[2019.06.17-21.24.25:205][105]BlueprintLog: New page: Compile hudMenu
+[2019.06.17-21.24.25:234][105]LogUObjectHash: Compacting FUObjectHashTables data took   3.05ms
+[2019.06.17-21.24.26:058][149]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/hudMenu" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMenu.uasset" SILENT=true
+[2019.06.17-21.24.26:073][149]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/hudMenu5D8A5F0F4BE50510D9380C96E7B85660.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/hudMenu.uasset'
+[2019.06.17-21.24.27:403][228]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.24.27:408][228]LogSlate: Window 'hudMenu' being destroyed
+[2019.06.17-21.24.41:473][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2019.06.17-21.24.51:147][ 28]LogSlate: Window 'Save Level As' being destroyed
+[2019.06.17-21.24.51:452][ 28]LogBlueprintActionDatabase: Requesting refresh due to module change: HierarchicalLODUtilities (loaded)
+[2019.06.17-21.24.51:617][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
+[2019.06.17-21.24.51:618][ 28]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/lvlTest" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/lvlTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.06.17-21.24.51:655][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2019.06.17-21.24.51:788][ 28]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/lvlTest89AFF5CD481C7A71F89EB497D61AFE5E.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/lvlTest.umap'
+[2019.06.17-21.24.51:806][ 28]LogFileHelpers: Saving map 'lvlTest' took 0.650
+[2019.06.17-21.24.51:809][ 28]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/Smile" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/Smile.uasset" SILENT=true
+[2019.06.17-21.24.51:876][ 28]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/Smile4C5774D7407215E103D456A740677D7A.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/Smile.uasset'
+[2019.06.17-21.24.51:882][ 28]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/inicioblanco" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/inicioblanco.uasset" SILENT=true
+[2019.06.17-21.24.51:889][ 28]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/inicioblanco590C553F4AC4828EF478769D653C4304.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/inicioblanco.uasset'
+[2019.06.17-21.24.51:895][ 28]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/JFRA_UI/imgInicio" FILE="C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/imgInicio.uasset" SILENT=true
+[2019.06.17-21.24.51:901][ 28]LogSavePackage: Moving 'C:/xampp/htdocs/JFRA3D/Semana26/Saved/imgInicio698915884F2F0B1BD854C39745F36256.tmp' to 'C:/xampp/htdocs/JFRA3D/Semana26/Content/JFRA_UI/imgInicio.uasset'
+[2019.06.17-21.24.55:309][214]LogTemp: Repeating last play command: Selected Viewport
+[2019.06.17-21.24.55:317][214]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/lvlTest.lvlTest:PersistentLevel' has LevelScriptBlueprint '/Game/lvlTest.lvlTest:PersistentLevel.lvlTest' with GeneratedClass '/Game/lvlTest.lvlTest_C' with ClassGeneratedBy '/Game/lvlTest.lvlTest:PersistentLevel.lvlTest'
+[2019.06.17-21.24.55:317][214]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.06.17-21.24.55:317][214]PIE: New page: PIE session: lvlTest (Jun 18, 2019, 1:24:55 AM)
+[2019.06.17-21.24.55:317][214]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_lvlTest
+[2019.06.17-21.24.55:318][214]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000874s)
+[2019.06.17-21.24.55:318][214]LogAIModule: Creating AISystem for world lvlTest
+[2019.06.17-21.24.55:319][214]LogPlayLevel: PIE: World Init took: (0.000561s)
+[2019.06.17-21.24.55:319][214]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/lvlTest.lvlTest to /Game/UEDPIE_0_lvlTest.lvlTest (0.001773s)
+[2019.06.17-21.24.55:403][214]LogUObjectHash: Compacting FUObjectHashTables data took   4.19ms
+[2019.06.17-21.24.55:451][214]LogInit: XAudio2 using 'VX238 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.06.17-21.24.55:472][214]LogInit: FAudioDevice initialized.
+[2019.06.17-21.24.55:505][214]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2019.06.17-21.24.55:506][214]LogWorld: Bringing World /Game/UEDPIE_0_lvlTest.lvlTest up for play (max tick rate 60) at 2019.06.17-23.24.55
+[2019.06.17-21.24.55:507][214]LogWorld: Bringing up level for play took: 0.000392
+[2019.06.17-21.24.55:521][214]PIE: Play in editor start time for /Game/UEDPIE_0_lvlTest 0.899
+[2019.06.17-21.24.55:521][214]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/lvlTest.lvlTest:PersistentLevel' has LevelScriptBlueprint '/Game/lvlTest.lvlTest:PersistentLevel.lvlTest' with GeneratedClass '/Game/lvlTest.lvlTest_C' with ClassGeneratedBy '/Game/lvlTest.lvlTest:PersistentLevel.lvlTest'
+[2019.06.17-21.24.55:887][236]LogActor: Warning: bp_Player_C_0 is outside the world bounds!
